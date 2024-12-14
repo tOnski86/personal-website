@@ -5,9 +5,8 @@ const GlobalStyles = createGlobalStyle`
   --color-white: #FAFAFA;  // primary text
   --color-black: #121212;  // primary dark
 
-  --color-primary-light: #28a5ee;
-  --color-primary-dark:#2295d8;
-  --color-secondary:#cd28ee;
+  --color-primary-dark:#2b8f9e;
+  --color-primary-light:#27aabe;
 
 
   --color-grey-1: #D5D5D5; // secondary text
@@ -15,6 +14,11 @@ const GlobalStyles = createGlobalStyle`
   --color-grey-3: #171717; // primary grey
 
   --border-sm: 0.1rem solid var(--color-grey-2);
+}
+
+::selection {
+  color: var(--color-white);
+  background-color: var(--color-primary-dark);
 }
 
 *, 

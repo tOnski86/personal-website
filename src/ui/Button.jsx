@@ -27,6 +27,14 @@ const StyledButton = styled.button`
       }
     `}
 
+    & svg {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   padding: 0.8rem 1.8rem;
   border-radius: 0.4rem;
   font-size: 1.4rem;

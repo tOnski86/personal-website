@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Logo from './Logo';
 import Button from './Button';
 import Navigation from './Navigation';
+import { HiOutlineEnvelope } from 'react-icons/hi2';
 
 const StyledHeader = styled.header`
   display: flex;
@@ -27,7 +28,10 @@ function Header() {
       </ContentGroup>
 
       <ContentGroup>
-        <Button variant='primary solid'>Contact</Button>
+        <Button variant='primary solid'>
+          <HiOutlineEnvelope />
+          <span>Contact</span>
+        </Button>
       </ContentGroup>
     </StyledHeader>
   );
