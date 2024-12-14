@@ -12,11 +12,3 @@ function App() {
 }
 
 export default App;
-
-/*
-About Me
-Portfolio
-Proficiencies
-Work Experience
-Contact
-*/

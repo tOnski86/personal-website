@@ -5,7 +5,8 @@ const GlobalStyles = createGlobalStyle`
   --color-white: #FAFAFA;  // primary text
   --color-black: #121212;  // primary dark
 
-  --color-primary: #28a5ee;
+  --color-primary-light: #28a5ee;
+  --color-primary-dark:#2295d8;
   --color-secondary:#cd28ee;
 
 

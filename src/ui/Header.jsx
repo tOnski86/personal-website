@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 import Logo from './Logo';
+import Button from './Button';
+import Navigation from './Navigation';
 
 const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  padding: 2rem 4.8rem;
+  padding: 2rem 8rem;
   border-bottom: var(--border-sm);
 `;
 
@@ -21,10 +23,12 @@ function Header() {
     <StyledHeader>
       <ContentGroup>
         <Logo />
-        <span>NAVIGATION</span>
+        <Navigation />
       </ContentGroup>
 
-      <button>CONTACT</button>
+      <ContentGroup>
+        <Button variant='primary solid'>Contact</Button>
+      </ContentGroup>
     </StyledHeader>
   );
 }
