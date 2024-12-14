@@ -8,7 +8,7 @@ const StyledLogo = styled.div`
 `;
 
 function Logo() {
-  return <StyledLogo>LOGO</StyledLogo>;
+  return <StyledLogo>tOnski</StyledLogo>;
 }
 
 export default Logo;

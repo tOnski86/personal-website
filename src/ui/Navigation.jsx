@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import {
   HiOutlineAcademicCap,
@@ -11,7 +13,6 @@ import {
 } from 'react-icons/hi2';
 
 import Button from './Button';
-import { useEffect, useState } from 'react';
 
 const DesktopNav = styled.nav`
   display: none;
@@ -26,16 +27,16 @@ const DesktopNav = styled.nav`
     display: flex;
     gap: 2rem;
   }
+`;
 
-  & li {
-    list-style: none;
-    font-weight: 500;
-    cursor: pointer;
-    transition: color 0.2s;
+const DesktopNavLink = styled(NavLink)`
+  list-style: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
 
-    &:hover {
-      color: var(--color-primary-dark);
-    }
+  &:hover {
+    color: var(--color-primary-dark);
   }
 `;
 
@@ -50,26 +51,26 @@ const MobileNav = styled.nav`
     display: flex;
     flex-direction: column;
   }
+`;
 
-  & li {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    list-style: none;
-    font-weight: 500;
-    cursor: pointer;
-    transition: color 0.2s;
+const MobileNavLink = styled(NavLink)`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  list-style: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
 
-    &:hover {
-      color: var(--color-primary-dark);
-      background-color: var(--color-grey-3);
-    }
+  &:hover {
+    color: var(--color-primary-dark);
+    background-color: var(--color-grey-3);
+  }
 
-    & svg {
-      width: 1.8rem;
-      height: 1.8rem;
-    }
+  & svg {
+    width: 1.8rem;
+    height: 1.8rem;
   }
 `;
 
@@ -77,19 +78,20 @@ const MobileNavControl = styled.button`
   background-color: transparent;
   border: none;
   position: absolute;
-  top: 0;
+  top: 0.6rem;
   right: 0;
   transform: translate(-50%, 50%);
+  color: var(--color-grey-1);
   cursor: pointer;
   transition: color 0.2s;
 
   &:hover {
-    color: var(--color-primary-dark);
+    color: var(--color-white);
   }
 
   & svg {
-    width: 3rem;
-    height: 3rem;
+    width: 2.4rem;
+    height: 2.4rem;
   }
 `;
 
@@ -104,10 +106,10 @@ function Navigation() {
     <>
       <DesktopNav>
         <ul>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Proficiencies</li>
-          <li>Work Experience</li>
+          <DesktopNavLink to='about'>About</DesktopNavLink>
+          <DesktopNavLink to='portfolio'>Portfolio</DesktopNavLink>
+          <DesktopNavLink to='proficiencies'>Proficiencies</DesktopNavLink>
+          <DesktopNavLink to='work-experience'>Work Experience</DesktopNavLink>
         </ul>
         <Button variant='primary solid'>
           <HiOutlineChatBubbleBottomCenter />
@@ -123,26 +125,26 @@ function Navigation() {
         </MobileNavControl>
         {mobileNavOpen && (
           <ul>
-            <li onClick={handleMobileNav}>
+            <MobileNavLink to='about' onClick={handleMobileNav}>
               <HiOutlineUser />
               <span>About</span>
-            </li>
-            <li onClick={handleMobileNav}>
+            </MobileNavLink>
+            <MobileNavLink to='portfolio' onClick={handleMobileNav}>
               <HiOutlinePhoto />
               <span>Portfolio</span>
-            </li>
-            <li onClick={handleMobileNav}>
+            </MobileNavLink>
+            <MobileNavLink to='proficiencies' onClick={handleMobileNav}>
               <HiOutlineAcademicCap />
               <span>Proficiencies</span>
-            </li>
-            <li onClick={handleMobileNav}>
+            </MobileNavLink>
+            <MobileNavLink to='work-experience' onClick={handleMobileNav}>
               <HiOutlineChartBar />
               <span>Work Experience</span>
-            </li>
-            <li onClick={handleMobileNav}>
+            </MobileNavLink>
+            <MobileNavLink to='contact' onClick={handleMobileNav}>
               <HiOutlineChatBubbleBottomCenterText />
               <span>Contact</span>
-            </li>
+            </MobileNavLink>
           </ul>
         )}
       </MobileNav>

@@ -28,8 +28,8 @@ const StyledButton = styled.button`
     `}
 
     & svg {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.6rem;
+    height: 1.6rem;
   }
 
   display: flex;
@@ -37,7 +37,7 @@ const StyledButton = styled.button`
   gap: 0.6rem;
   padding: 0.8rem 1.8rem;
   border-radius: 0.4rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s;
