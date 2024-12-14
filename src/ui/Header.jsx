@@ -6,7 +6,7 @@ const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem 8rem;
+  padding: 1rem 2rem;
   border-bottom: var(--border-sm);
 
   & > :nth-child(2) {
