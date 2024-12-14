@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const StyledLogo = styled.div`
-  font-size: 2rem;
-  font-weight: 500;
-  padding-right: 2rem;
+  display: flex;
+  font-size: 3rem;
+  font-weight: 600;
   color: var(--color-primary-dark);
 `;
 

@@ -43,6 +43,16 @@ body {
   color: var(--color-white);
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
 `;
 
 export default GlobalStyles;

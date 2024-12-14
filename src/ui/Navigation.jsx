@@ -1,25 +1,59 @@
 import styled from 'styled-components';
+import Button from './Button';
+import { HiOutlineEnvelope } from 'react-icons/hi2';
 
-const StyledUl = styled.ul`
-  display: flex;
-  gap: 2rem;
-  align-items: center;
+const DesktopNav = styled.nav`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  & li {
+    list-style: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+  }
 `;
 
-const StyledLi = styled.li`
-  list-style: none;
+const MobileNav = styled.nav`
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 
 function Navigation() {
   return (
-    <nav>
-      <StyledUl>
-        <StyledLi>About Me</StyledLi>
-        <StyledLi>Portfolio</StyledLi>
-        <StyledLi>Proficiencies</StyledLi>
-        <StyledLi>Work Experience</StyledLi>
-      </StyledUl>
-    </nav>
+    <>
+      <DesktopNav>
+        <ul>
+          <li>About</li>
+          <li>Portfolio</li>
+          <li>Proficiencies</li>
+          <li>Work Experience</li>
+        </ul>
+        <Button variant='primary solid'>
+          <HiOutlineEnvelope />
+          <span>Contact</span>
+        </Button>
+      </DesktopNav>
+
+      <MobileNav>MOBILE</MobileNav>
+    </>
   );
 }
 
