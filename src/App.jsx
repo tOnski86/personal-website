@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: '/portfolio',
+        path: '/works',
         element: <Portfolio />,
       },
       {
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
         element: <Proficiencies />,
       },
       {
-        path: '/work-experience',
+        path: '/experience',
         element: <WorkExperience />,
       },
     ],

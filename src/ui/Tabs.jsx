@@ -38,7 +38,7 @@ const TabContent = styled.div`
   gap: 2rem;
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-template-columns: repeat(2, minmax(24rem, 1fr));
   }
 
   @media (min-width: 1020px) {
@@ -54,6 +54,7 @@ const Card = styled.div`
   border-radius: 0.4rem;
   background-color: var(--color-grey-3);
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 
   & > p {
     font-size: 1.2rem;
@@ -62,13 +63,16 @@ const Card = styled.div`
   & > img {
     border-radius: 0.4rem;
   }
+  &:hover {
+    background-color: var(--color-grey-2);
+  }
 `;
 
 function Tabs() {
   return (
     <StyledTabs>
       <TabTitleGroup>
-        <TabTitle opens='tab-1'>Web Dev</TabTitle>
+        <TabTitle opens='tab-1'>Web Design</TabTitle>
         <TabTitle opens='tab-2'>Content</TabTitle>
       </TabTitleGroup>
 
