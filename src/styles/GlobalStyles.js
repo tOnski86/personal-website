@@ -42,6 +42,7 @@ body {
   min-height: 100vh;
   background-color: var(--color-black);
   color: var(--color-white);
+ 
 }
 
 a {
