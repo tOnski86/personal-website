@@ -50,7 +50,7 @@ function WorkExperience() {
   return (
     <>
       <Row>
-        <GridHeading as='h1'>Work History</GridHeading>
+        <GridHeading as='h1'>Work Experience</GridHeading>
         <Timeline />
 
         <Company>
@@ -84,6 +84,26 @@ function WorkExperience() {
             <Pill variant='neutral outline'>Marketing</Pill>
             <Pill variant='neutral outline'>Content</Pill>
             <Pill variant='neutral outline'>Web Design</Pill>
+          </Skills>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+            dolorum ullam officia? Illum quis autem eaque cupiditate ab culpa
+            magni quia at? Harum repellendus sapiente voluptatem maxime, dolorem
+            maiores velit.
+          </p>
+        </Company>
+
+        <Timeline />
+        <Company>
+          <HeadingGroup>
+            <span>Convergys &middot; Jul 2010 - Aug 2013</span>
+            <Heading as='h2'>TSR and Sales</Heading>
+          </HeadingGroup>
+
+          <Skills>
+            <Pill variant='neutral outline'>Technical Support</Pill>
+            <Pill variant='neutral outline'>Sales</Pill>
           </Skills>
 
           <p>

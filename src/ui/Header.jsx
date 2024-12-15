@@ -8,9 +8,10 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   padding: 1rem 2rem;
   border-bottom: var(--border-sm);
-  background-color: var(--color-black);
+  background-color: rgba(18, 18, 18, 0.97);
   position: sticky;
   top: 0;
+  backdrop-filter: blur(0.4rem);
 
   & > :nth-child(2) {
     flex: 1;
