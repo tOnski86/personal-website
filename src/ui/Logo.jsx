@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledLogo = styled.div`
@@ -8,7 +9,11 @@ const StyledLogo = styled.div`
 `;
 
 function Logo() {
-  return <StyledLogo>tOnski</StyledLogo>;
+  return (
+    <NavLink to='/'>
+      <StyledLogo>tOnski</StyledLogo>
+    </NavLink>
+  );
 }
 
 export default Logo;

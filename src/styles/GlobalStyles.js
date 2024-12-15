@@ -38,7 +38,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
-  line-height: 1.5;
+  line-height: 1.6;
   min-height: 100vh;
   background-color: var(--color-black);
   color: var(--color-white);
@@ -54,6 +54,11 @@ button {
   color: inherit;
 }
 
+p {
+  &:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+}
 `;
 
 export default GlobalStyles;

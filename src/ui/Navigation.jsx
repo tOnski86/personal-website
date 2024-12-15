@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { Link, NavLink } from 'react-router-dom';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import {
   HiOutlineAcademicCap,
   HiOutlineBars3,
   HiOutlineChartBar,
-  HiOutlineChatBubbleBottomCenter,
   HiOutlineChatBubbleBottomCenterText,
   HiOutlinePhoto,
   HiOutlineUser,
@@ -118,15 +118,20 @@ function Navigation() {
           <DesktopNavLink to='about'>About</DesktopNavLink>
           <DesktopNavLink to='portfolio'>Portfolio</DesktopNavLink>
           <DesktopNavLink to='proficiencies'>Proficiencies</DesktopNavLink>
-          <DesktopNavLink to='work-experience'>Work Experience</DesktopNavLink>
+          <DesktopNavLink to='work-experience'>Work</DesktopNavLink>
+          <DesktopNavLink to='contact'>Contact</DesktopNavLink>
         </ul>
 
-        <NavLink to='contact'>
+        <Link
+          to='https://github.com/tOnski86'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <Button variant='primary solid'>
-            <HiOutlineChatBubbleBottomCenter />
-            <span>Contact</span>
+            <FaGithub />
+            <span>GitHub</span>
           </Button>
-        </NavLink>
+        </Link>
       </DesktopNav>
 
       <MobileNav>
