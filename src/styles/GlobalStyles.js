@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
   --color-grey-3: #171717; // primary grey
 
   --border-sm: 0.1rem solid var(--color-grey-2);
+  --border-md: 0.3rem solid var(--color-grey-2);
 }
 
 ::selection {

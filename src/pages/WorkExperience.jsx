@@ -1,5 +1,5 @@
 function WorkExperience() {
-  return <div>WorkExperience</div>;
+  return <div>Work Experience</div>;
 }
 
 export default WorkExperience;

@@ -35,6 +35,10 @@ const DesktopNavLink = styled(NavLink)`
   cursor: pointer;
   transition: color 0.2s;
 
+  &.active {
+    color: var(--color-primary-light);
+  }
+
   &:hover {
     color: var(--color-primary-dark);
   }
@@ -62,6 +66,11 @@ const MobileNavLink = styled(NavLink)`
   font-weight: 500;
   cursor: pointer;
   transition: color 0.2s;
+
+  &.active {
+    color: var(--color-primary-light);
+    background-color: var(--color-grey-3);
+  }
 
   &:hover {
     color: var(--color-primary-dark);
@@ -111,18 +120,20 @@ function Navigation() {
           <DesktopNavLink to='proficiencies'>Proficiencies</DesktopNavLink>
           <DesktopNavLink to='work-experience'>Work Experience</DesktopNavLink>
         </ul>
-        <Button variant='primary solid'>
-          <HiOutlineChatBubbleBottomCenter />
-          <span>Contact</span>
-        </Button>
+
+        <NavLink to='contact'>
+          <Button variant='primary solid'>
+            <HiOutlineChatBubbleBottomCenter />
+            <span>Contact</span>
+          </Button>
+        </NavLink>
       </DesktopNav>
 
       <MobileNav>
         <MobileNavControl onClick={handleMobileNav}>
           {mobileNavOpen ? <HiOutlineXMark /> : <HiOutlineBars3 />}
-
-          {mobileNavOpen}
         </MobileNavControl>
+
         {mobileNavOpen && (
           <ul>
             <MobileNavLink to='about' onClick={handleMobileNav}>
