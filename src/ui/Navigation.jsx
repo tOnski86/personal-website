@@ -106,7 +106,7 @@ const MobileNavControl = styled.button`
 `;
 
 function Navigation() {
-  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [mobileNavOpen, setMobileNavOpen] = useState(true);
 
   function handleMobileNav() {
     setMobileNavOpen(mobileNavOpen => !mobileNavOpen);

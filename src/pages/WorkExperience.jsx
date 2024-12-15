@@ -48,115 +48,113 @@ const Skills = styled.div`
 
 function WorkExperience() {
   return (
-    <>
-      <Row>
-        <GridHeading as='h1'>Work History</GridHeading>
-        <Timeline />
+    <Row>
+      <GridHeading as='h1'>Work History</GridHeading>
 
-        <Company>
-          <HeadingGroup>
-            <span>Go2 &middot; Jul 2016 - Oct 2024</span>
-            <Heading as='h2'>Project and Team Manager</Heading>
-          </HeadingGroup>
+      <Timeline />
+      <Company>
+        <HeadingGroup>
+          <span>Go2 &middot; Jul 2016 - Oct 2024</span>
+          <Heading as='h2'>Project and Team Manager</Heading>
+        </HeadingGroup>
 
-          <Skills>
-            <Pill variant='neutral outline'>Leadership</Pill>
-            <Pill variant='neutral outline'>Strategy</Pill>
-            <Pill variant='neutral outline'>Web Design</Pill>
-          </Skills>
+        <Skills>
+          <Pill variant='neutral outline'>Leadership</Pill>
+          <Pill variant='neutral outline'>Strategy</Pill>
+          <Pill variant='neutral outline'>Web Design</Pill>
+        </Skills>
 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-            dolorum ullam officia? Illum quis autem eaque cupiditate ab culpa
-            magni quia at? Harum repellendus sapiente voluptatem maxime, dolorem
-            maiores velit.
-          </p>
-        </Company>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+          dolorum ullam officia? Illum quis autem eaque cupiditate ab culpa
+          magni quia at? Harum repellendus sapiente voluptatem maxime, dolorem
+          maiores velit.
+        </p>
+      </Company>
 
-        <Timeline />
-        <Company>
-          <HeadingGroup>
-            <span>Fountain Property Group &middot; Sep 2013 - Dec 2015</span>
-            <Heading as='h2'>Virtual Assistant</Heading>
-          </HeadingGroup>
+      <Timeline />
+      <Company>
+        <HeadingGroup>
+          <span>Fountain Property &middot; Sep 2013 - Dec 2015</span>
+          <Heading as='h2'>Virtual Assistant</Heading>
+        </HeadingGroup>
 
-          <Skills>
-            <Pill variant='neutral outline'>Marketing</Pill>
-            <Pill variant='neutral outline'>Content</Pill>
-            <Pill variant='neutral outline'>Web Design</Pill>
-          </Skills>
+        <Skills>
+          <Pill variant='neutral outline'>Marketing</Pill>
+          <Pill variant='neutral outline'>Content</Pill>
+          <Pill variant='neutral outline'>Web Design</Pill>
+        </Skills>
 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-            dolorum ullam officia? Illum quis autem eaque cupiditate ab culpa
-            magni quia at? Harum repellendus sapiente voluptatem maxime, dolorem
-            maiores velit.
-          </p>
-        </Company>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+          dolorum ullam officia? Illum quis autem eaque cupiditate ab culpa
+          magni quia at? Harum repellendus sapiente voluptatem maxime, dolorem
+          maiores velit.
+        </p>
+      </Company>
 
-        <Timeline />
-        <Company>
-          <HeadingGroup>
-            <span>Convergys &middot; Jul 2010 - Aug 2013</span>
-            <Heading as='h2'>TSR and Sales</Heading>
-          </HeadingGroup>
+      <Timeline />
+      <Company>
+        <HeadingGroup>
+          <span>Convergys &middot; Jul 2010 - Aug 2013</span>
+          <Heading as='h2'>TSR and Sales</Heading>
+        </HeadingGroup>
 
-          <Skills>
-            <Pill variant='neutral outline'>Technical Support</Pill>
-            <Pill variant='neutral outline'>Sales</Pill>
-          </Skills>
+        <Skills>
+          <Pill variant='neutral outline'>Technical Support</Pill>
+          <Pill variant='neutral outline'>Sales</Pill>
+        </Skills>
 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-            dolorum ullam officia? Illum quis autem eaque cupiditate ab culpa
-            magni quia at? Harum repellendus sapiente voluptatem maxime, dolorem
-            maiores velit.
-          </p>
-        </Company>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+          dolorum ullam officia? Illum quis autem eaque cupiditate ab culpa
+          magni quia at? Harum repellendus sapiente voluptatem maxime, dolorem
+          maiores velit.
+        </p>
+      </Company>
 
-        <Timeline />
-        <Company>
-          <HeadingGroup>
-            <span>Teleperformance &middot; Dec 2009 - Jun 2010</span>
-            <Heading as='h2'>Team Leader</Heading>
-          </HeadingGroup>
+      <Timeline />
+      <Company>
+        <HeadingGroup>
+          <span>Teleperformance &middot; Dec 2009 - Jun 2010</span>
+          <Heading as='h2'>Team Leader</Heading>
+        </HeadingGroup>
 
-          <Skills>
-            <Pill variant='neutral outline'>Leadership</Pill>
-            <Pill variant='neutral outline'>Training</Pill>
-            <Pill variant='neutral outline'>Coaching</Pill>
-          </Skills>
+        <Skills>
+          <Pill variant='neutral outline'>Leadership</Pill>
+          <Pill variant='neutral outline'>Training</Pill>
+          <Pill variant='neutral outline'>Coaching</Pill>
+        </Skills>
 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-            dolorum ullam officia? Illum quis autem eaque cupiditate ab culpa
-            magni quia at? Harum repellendus sapiente voluptatem maxime, dolorem
-            maiores velit.
-          </p>
-        </Company>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+          dolorum ullam officia? Illum quis autem eaque cupiditate ab culpa
+          magni quia at? Harum repellendus sapiente voluptatem maxime, dolorem
+          maiores velit.
+        </p>
+      </Company>
 
-        <Timeline />
-        <Company>
-          <HeadingGroup>
-            <span>Teleperformance &middot; Sep 2006 - Dec 2009</span>
-            <Heading as='h2'>Technical Support Representative</Heading>
-          </HeadingGroup>
+      <Timeline />
+      <Company>
+        <HeadingGroup>
+          <span>Teleperformance &middot; Sep 2006 - Dec 2009</span>
+          <Heading as='h2'>Technical Support Representative</Heading>
+        </HeadingGroup>
 
-          <Skills>
-            <Pill variant='neutral outline'>Data Entry</Pill>
-            <Pill variant='neutral outline'>Soft Skills</Pill>
-            <Pill variant='neutral outline'>Problem-Solving</Pill>
-          </Skills>
+        <Skills>
+          <Pill variant='neutral outline'>Data Entry</Pill>
+          <Pill variant='neutral outline'>Soft Skills</Pill>
+          <Pill variant='neutral outline'>Problem-Solving</Pill>
+        </Skills>
 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-            dolorum ullam officia? Illum quis autem eaque cupiditate ab culpa
-            magni quia at? Harum repellendus sapiente voluptatem maxime, dolorem
-            maiores velit.
-          </p>
-        </Company>
-      </Row>
-    </>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+          dolorum ullam officia? Illum quis autem eaque cupiditate ab culpa
+          magni quia at? Harum repellendus sapiente voluptatem maxime, dolorem
+          maiores velit.
+        </p>
+      </Company>
+    </Row>
   );
 }
 

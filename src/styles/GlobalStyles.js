@@ -7,6 +7,7 @@ const GlobalStyles = createGlobalStyle`
 
   --color-primary-dark:#2b8f9e;
   --color-primary-light:#27aabe;
+  --color-secondary-dark:#ff44ff;
 
 
   --color-grey-1: #D5D5D5; // secondary text
@@ -53,9 +54,10 @@ a {
   text-decoration: none;
 }
 
-button {
+button, 
+input, 
+textarea {
   font: inherit;
-  color: inherit;
 }
 
 p {
