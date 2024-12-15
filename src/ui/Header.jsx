@@ -8,6 +8,9 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   padding: 1rem 2rem;
   border-bottom: var(--border-sm);
+  background-color: var(--color-black);
+  position: sticky;
+  top: 0;
 
   & > :nth-child(2) {
     flex: 1;
