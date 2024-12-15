@@ -28,6 +28,7 @@ const GlobalStyles = createGlobalStyle`
   padding: 0;
   margin: 0;
   box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
