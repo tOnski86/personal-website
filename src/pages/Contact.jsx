@@ -8,8 +8,8 @@ const Row = styled.div`
   grid-template-columns: repeat(1, minmax(auto, 1fr));
   justify-content: center;
   align-items: start;
-  row-gap: 6rem;
-  column-gap: 2rem;
+  row-gap: 4rem;
+  column-gap: 4rem;
   margin-bottom: 8rem;
 
   @media (min-width: 768px) {
@@ -25,7 +25,17 @@ function Contact() {
   return (
     <Row>
       <GridHeading as='h1'>Let's Chat.</GridHeading>
-      <div>Something Else</div>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+          officiis expedita aperiam dignissimos impedit deleniti dolorum
+          repellat.
+        </p>
+        <p>
+          Quidem laborum, soluta consectetur placeat obcaecati qui quis quisquam
+          illo cupiditate nostrum? Sequi.
+        </p>
+      </div>
       <ContactForm />
     </Row>
   );

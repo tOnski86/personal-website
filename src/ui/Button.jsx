@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 const StyledButton = styled.button`
   ${props =>
-    props.$variant === 'primary outline' &&
+    props.$variant === 'primary-outline' &&
     css`
       color: var(--color-primary-dark);
       background-color: transparent;
@@ -15,7 +15,7 @@ const StyledButton = styled.button`
     `}
 
   ${props =>
-    props.$variant === 'primary solid' &&
+    props.$variant === 'primary-solid' &&
     css`
       color: var(--color-white);
       background-color: var(--color-primary-dark);
@@ -25,6 +25,8 @@ const StyledButton = styled.button`
         background-color: var(--color-primary-light);
       }
     `}
+
+    
 
     & svg {
     width: 1.6rem;
@@ -42,8 +44,12 @@ const StyledButton = styled.button`
   transition: all 0.3s;
 `;
 
-function Button({ children, variant }) {
-  return <StyledButton $variant={variant}>{children}</StyledButton>;
+function Button({ children, variant, onClick }) {
+  return (
+    <StyledButton $variant={variant} onClick={onClick}>
+      {children}
+    </StyledButton>
+  );
 }
 
 export default Button;

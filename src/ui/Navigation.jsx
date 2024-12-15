@@ -106,7 +106,7 @@ const MobileNavControl = styled.button`
 `;
 
 function Navigation() {
-  const [mobileNavOpen, setMobileNavOpen] = useState(true);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   function handleMobileNav() {
     setMobileNavOpen(mobileNavOpen => !mobileNavOpen);
@@ -129,7 +129,7 @@ function Navigation() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <Button variant='primary outline'>
+            <Button variant='primary-outline'>
               <FaGithub />
               <span>GitHub</span>
             </Button>
@@ -140,7 +140,7 @@ function Navigation() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <Button variant='primary solid'>
+            <Button variant='primary-solid'>
               <FaLinkedin />
               <span>LinkedIn</span>
             </Button>
