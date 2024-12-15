@@ -13,7 +13,7 @@ const Row = styled.div`
   min-height: ${`calc(100vh - 20rem)`};
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-template-columns: repeat(2, minmax(auto, 1fr));
     gap: 4rem;
   }
@@ -59,20 +59,12 @@ function About() {
           </p>
         </div>
 
-        <ButtonRow>
-          <NavLink to='/portfolio'>
-            <Button variant='primary solid'>
-              <HiOutlinePhoto />
-              <span>Portfolio</span>
-            </Button>
-          </NavLink>
-          <NavLink to='/work-experience'>
-            <Button variant='primary outline'>
-              <HiOutlineChartBar />
-              <span>Work Experience</span>
-            </Button>
-          </NavLink>
-        </ButtonRow>
+        <NavLink to='/work-experience'>
+          <Button variant='primary solid'>
+            <HiOutlineChartBar />
+            <span>Work Experience</span>
+          </Button>
+        </NavLink>
       </Column>
 
       <Column></Column>

@@ -50,7 +50,7 @@ function WorkExperience() {
   return (
     <>
       <Row>
-        <GridHeading as='h1'>Work Experience</GridHeading>
+        <GridHeading as='h1'>Work History</GridHeading>
         <Timeline />
 
         <Company>

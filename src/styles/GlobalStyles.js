@@ -13,6 +13,8 @@ const GlobalStyles = createGlobalStyle`
   --color-grey-2: #2B2B2B; // border grey
   --color-grey-3: #171717; // primary grey
 
+  --color-effect-glass: rgba(18, 18, 18, 0.97);
+
   --border-sm: 0.1rem solid var(--color-grey-2);
   --border-md: 0.3rem solid var(--color-grey-2);
 }

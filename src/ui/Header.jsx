@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   padding: 1rem 2rem;
   border-bottom: var(--border-sm);
-  background-color: rgba(18, 18, 18, 0.97);
+  background-color: var(--color-effect-glass);
   position: sticky;
   top: 0;
   backdrop-filter: blur(0.4rem);
@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
     flex: 1;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
     flex-direction: row;
     align-items: center;
     justify-content: start;
