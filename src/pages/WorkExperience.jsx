@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { HiBriefcase } from 'react-icons/hi2';
 
 import Heading from '../ui/Heading';
 import HeadingGroup from '../ui/HeadingGroup';
+import Pill from '../ui/Pill';
 
 const Row = styled.div`
   display: grid;
@@ -46,14 +46,6 @@ const Skills = styled.div`
   margin-bottom: 1rem;
 `;
 
-const Pill = styled.span`
-  font-size: 1.1rem;
-  color: var(--color-grey-1);
-  border: var(--border-sm);
-  border-radius: 50rem;
-  padding: 0.6rem 1.2rem;
-`;
-
 function WorkExperience() {
   return (
     <>
@@ -68,9 +60,9 @@ function WorkExperience() {
           </HeadingGroup>
 
           <Skills>
-            <Pill>Leadership</Pill>
-            <Pill>Strategy</Pill>
-            <Pill>Web Design</Pill>
+            <Pill variant='neutral outline'>Leadership</Pill>
+            <Pill variant='neutral outline'>Strategy</Pill>
+            <Pill variant='neutral outline'>Web Design</Pill>
           </Skills>
 
           <p>
@@ -89,9 +81,9 @@ function WorkExperience() {
           </HeadingGroup>
 
           <Skills>
-            <Pill>Online Marketing</Pill>
-            <Pill>Content Creation</Pill>
-            <Pill>Web Design</Pill>
+            <Pill variant='neutral outline'>Marketing</Pill>
+            <Pill variant='neutral outline'>Content</Pill>
+            <Pill variant='neutral outline'>Web Design</Pill>
           </Skills>
 
           <p>
@@ -110,9 +102,9 @@ function WorkExperience() {
           </HeadingGroup>
 
           <Skills>
-            <Pill>Leadership</Pill>
-            <Pill>Training</Pill>
-            <Pill>Coaching</Pill>
+            <Pill variant='neutral outline'>Leadership</Pill>
+            <Pill variant='neutral outline'>Training</Pill>
+            <Pill variant='neutral outline'>Coaching</Pill>
           </Skills>
 
           <p>
@@ -131,9 +123,9 @@ function WorkExperience() {
           </HeadingGroup>
 
           <Skills>
-            <Pill>Data Entry</Pill>
-            <Pill>Soft Skills</Pill>
-            <Pill>Problem-Solving</Pill>
+            <Pill variant='neutral outline'>Data Entry</Pill>
+            <Pill variant='neutral outline'>Soft Skills</Pill>
+            <Pill variant='neutral outline'>Problem-Solving</Pill>
           </Skills>
 
           <p>

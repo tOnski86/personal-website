@@ -40,7 +40,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.6;
   min-height: 100vh;
-  background-color: var(--color-black);
+  background-image: linear-gradient(to bottom right, var(--color-black), var(--color-grey-3));
   color: var(--color-white);
  
 }
