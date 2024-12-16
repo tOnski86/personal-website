@@ -13,7 +13,7 @@ const Row = styled.div`
   margin-bottom: 8rem;
 
   @media (min-width: 768px) {
-    grid-template-columns: minmax(auto, 24rem) minmax(auto, 60rem);
+    grid-template-columns: minmax(auto, 24rem) minmax(auto, 50rem);
   }
 `;
 

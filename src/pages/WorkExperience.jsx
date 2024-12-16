@@ -61,7 +61,7 @@ function WorkExperience() {
         <Skills>
           <Pill variant='neutral outline'>Leadership</Pill>
           <Pill variant='neutral outline'>Strategy</Pill>
-          <Pill variant='neutral outline'>Web Design</Pill>
+          <Pill variant='neutral outline'>App Dev</Pill>
         </Skills>
 
         <p>

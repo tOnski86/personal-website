@@ -35,13 +35,17 @@ const InputError = styled.span`
   color: var(--color-secondary-dark);
 `;
 
-const StyledInput = styled.input`
+const Input = styled.input`
   ${sharedInputStyles}
 `;
 
-const StyledTextArea = styled.textarea`
+const TextArea = styled.textarea`
   ${sharedInputStyles}
   resize: none;
+`;
+
+const Label = styled.label`
+  font-weight: 500;
 `;
 
 const ButtonContainer = styled.div`
@@ -54,20 +58,20 @@ function ContactForm() {
     <>
       <InputRow>
         <InputGroup>
-          <label htmlFor='name'>Your Name</label>
-          <StyledInput type='text' id='name' required />
+          <Label htmlFor='name'>Your Name</Label>
+          <Input type='text' id='name' required />
           <InputError>This field is required</InputError>
         </InputGroup>
 
         <InputGroup>
-          <label htmlFor='email'>Email Address</label>
-          <StyledInput type='email' id='email' required />
+          <Label htmlFor='email'>Email Address</Label>
+          <Input type='email' id='email' required />
           <InputError>This field is required</InputError>
         </InputGroup>
 
         <InputGroup>
-          <label htmlFor='message'>How can I help?</label>
-          <StyledTextArea type='text' id='message' required rows={5} />
+          <Label htmlFor='message'>How can I help?</Label>
+          <TextArea type='text' id='message' required rows={5} />
           <InputError>This field is required</InputError>
         </InputGroup>
 

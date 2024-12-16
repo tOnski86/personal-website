@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+
 import Heading from './Heading';
+import Card from './Card';
 
 const StyledTabs = styled.div`
   max-width: 120rem;
@@ -13,8 +15,9 @@ const TabTitleGroup = styled.div`
 `;
 
 const TabTitle = styled.button`
-  padding: 1.2rem 4rem;
+  padding: 1.2rem 3rem;
   border: none;
+  font-weight: 500;
   background-color: transparent;
   color: var(--color-white);
   cursor: pointer;
@@ -43,28 +46,6 @@ const TabContent = styled.div`
 
   @media (min-width: 1020px) {
     grid-template-columns: repeat(3, minmax(20rem, 1fr));
-  }
-`;
-
-const Card = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 2rem;
-  border-radius: 0.4rem;
-  background-color: var(--color-grey-3);
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-
-  & > p {
-    font-size: 1.2rem;
-  }
-
-  & > img {
-    border-radius: 0.4rem;
-  }
-  &:hover {
-    background-color: var(--color-grey-2);
   }
 `;
 
