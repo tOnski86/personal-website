@@ -38,6 +38,8 @@ const GlobalStyles = createGlobalStyle`
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow-y: scroll;
+  scrollbar-color: var(--color-grey-2) var(--color-grey-3);
 }
 
 body {
@@ -47,8 +49,7 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   background-image: linear-gradient(to bottom right, var(--color-black), var(--color-grey-3));
-  color: var(--color-white);
- 
+  color: var(--color-white); 
 }
 
 a {

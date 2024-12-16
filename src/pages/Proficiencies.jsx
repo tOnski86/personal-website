@@ -40,6 +40,7 @@ import {
   SiOpenai,
   SiTypescript,
   SiNodedotjs,
+  SiObsidian,
 } from 'react-icons/si';
 
 import Heading from '../ui/Heading';
@@ -295,6 +296,17 @@ function Proficiencies() {
           <CardHeading as='h4'>
             <SiGithub />
             <span>GitHub</span>
+          </CardHeading>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            eius.
+          </p>
+        </StyledCard>
+
+        <StyledCard>
+          <CardHeading as='h4'>
+            <SiObsidian />
+            <span>Obsidian</span>
           </CardHeading>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,

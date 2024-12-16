@@ -79,7 +79,7 @@ function Portfolio() {
           </Card>
         </Tabs.Content>
 
-        <Tabs.Content name='tab-2'></Tabs.Content>
+        <Tabs.Content name='tab-2'>test</Tabs.Content>
       </Tabs.ContentGroup>
     </Tabs>
   );

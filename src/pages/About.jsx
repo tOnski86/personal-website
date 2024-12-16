@@ -38,7 +38,7 @@ const Column = styled.div`
 const PersonalRow = styled.div`
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  gap: 1rem;
 `;
 
 function About() {

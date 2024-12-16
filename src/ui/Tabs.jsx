@@ -1,4 +1,5 @@
-import { createContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledTabs = styled.div`
@@ -21,11 +22,17 @@ const TabTitle = styled.button`
   cursor: pointer;
   transition: all 0.2s;
 
-  &:hover {
+  &.active {
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
     color: var(--color-primary-light);
     background-color: var(--color-grey-3);
+  }
+
+  &:hover {
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    color: var(--color-primary-light);
   }
 `;
 
@@ -50,10 +57,10 @@ const TabContent = styled.div`
 const TabsContext = createContext();
 
 function Tabs({ children }) {
-  const [tabName, setTabName] = useState('');
+  const [tabName, setTabName] = useState('tab-1');
 
   return (
-    <TabsContext.Provider value={{}}>
+    <TabsContext.Provider value={{ tabName, setTabName }}>
       <StyledTabs>{children}</StyledTabs>
     </TabsContext.Provider>
   );
@@ -63,16 +70,27 @@ function TitleGroup({ children }) {
   return <TabTitleGroup>{children}</TabTitleGroup>;
 }
 
-function Title({ children }) {
-  return <TabTitle>{children}</TabTitle>;
+function Title({ children, opens }) {
+  const { tabName, setTabName } = useContext(TabsContext);
+
+  return (
+    <TabTitle
+      onClick={() => setTabName(opens)}
+      className={tabName === opens ? 'active' : ''}
+    >
+      {children}
+    </TabTitle>
+  );
 }
 
 function ContentGroup({ children }) {
   return <TabContentGroup>{children}</TabContentGroup>;
 }
 
-function Content({ children }) {
-  return <TabContent>{children}</TabContent>;
+function Content({ children, name }) {
+  const { tabName } = useContext(TabsContext);
+
+  return <>{tabName === name && <TabContent>{children}</TabContent>}</>;
 }
 
 Tabs.TitleGroup = TitleGroup;
