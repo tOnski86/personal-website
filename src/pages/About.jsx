@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { HiMapPin, HiChartBar } from 'react-icons/hi2';
-import { FaGem } from 'react-icons/fa';
+import { FaFilm, FaGem, FaPizzaSlice } from 'react-icons/fa';
+import { TbLegoFilled } from 'react-icons/tb';
+import { SiDota2 } from 'react-icons/si';
+import { IoHeadsetSharp } from 'react-icons/io5';
 
 import { calcAge } from '../utils/helper';
 
@@ -10,6 +13,7 @@ import ButtonRow from '../ui/ButtonRow';
 import Heading from '../ui/Heading';
 import HeadingGroup from '../ui/HeadingGroup';
 import Pill from '../ui/Pill';
+import { FaCode } from 'react-icons/fa6';
 
 const Row = styled.div`
   display: grid;
@@ -37,6 +41,7 @@ const Column = styled.div`
 
 const PersonalRow = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 `;
@@ -86,7 +91,37 @@ function About() {
 
           <Pill variant='neutral-outline-base'>
             <FaGem />
-            <span>{calcAge()} years old</span>
+            <span>{calcAge()}</span>
+          </Pill>
+
+          <Pill variant='neutral-outline-base'>
+            <FaPizzaSlice />
+            <span>Pizza</span>
+          </Pill>
+
+          <Pill variant='neutral-outline-base'>
+            <IoHeadsetSharp />
+            <span>Coheed & Cambria</span>
+          </Pill>
+
+          <Pill variant='neutral-outline-base'>
+            <TbLegoFilled />
+            <span>Lego</span>
+          </Pill>
+
+          <Pill variant='neutral-outline-base'>
+            <FaCode />
+            <span>Coding</span>
+          </Pill>
+
+          <Pill variant='neutral-outline-base'>
+            <SiDota2 />
+            <span>Dota 2</span>
+          </Pill>
+
+          <Pill variant='neutral-outline-base'>
+            <FaFilm />
+            <span>The Sopranos</span>
           </Pill>
         </PersonalRow>
       </Column>
