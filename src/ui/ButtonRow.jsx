@@ -1,8 +1,23 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const ButtonRow = styled.div`
+const StyledButtonRow = styled.div`
   display: flex;
-  gap: 1rem;
+
+  ${props =>
+    props.$spacing === 'gap-none' &&
+    css`
+      gap: 0rem;
+    `}
+
+  ${props =>
+    props.$spacing === 'gap-sm' &&
+    css`
+      gap: 1rem;
+    `}
 `;
+
+function ButtonRow({ children, spacing }) {
+  return <StyledButtonRow $spacing={spacing}>{children}</StyledButtonRow>;
+}
 
 export default ButtonRow;

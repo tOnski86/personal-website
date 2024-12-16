@@ -59,9 +59,9 @@ function WorkExperience() {
         </HeadingGroup>
 
         <Skills>
-          <Pill variant='neutral-outline'>Leadership</Pill>
-          <Pill variant='neutral-outline'>Strategy</Pill>
-          <Pill variant='neutral-outline'>Web Dev</Pill>
+          <Pill variant='neutral-outline-sm'>Leadership</Pill>
+          <Pill variant='neutral-outline-sm'>Strategy</Pill>
+          <Pill variant='neutral-outline-sm'>Web Dev</Pill>
         </Skills>
 
         <p>
@@ -80,9 +80,9 @@ function WorkExperience() {
         </HeadingGroup>
 
         <Skills>
-          <Pill variant='neutral-outline'>Marketing</Pill>
-          <Pill variant='neutral-outline'>Content</Pill>
-          <Pill variant='neutral-outline'>Web Design</Pill>
+          <Pill variant='neutral-outline-sm'>Marketing</Pill>
+          <Pill variant='neutral-outline-sm'>Content</Pill>
+          <Pill variant='neutral-outline-sm'>Web Design</Pill>
         </Skills>
 
         <p>
@@ -101,8 +101,8 @@ function WorkExperience() {
         </HeadingGroup>
 
         <Skills>
-          <Pill variant='neutral-outline'>Technical Support</Pill>
-          <Pill variant='neutral-outline'>Sales</Pill>
+          <Pill variant='neutral-outline-sm'>Technical Support</Pill>
+          <Pill variant='neutral-outline-sm'>Sales</Pill>
         </Skills>
 
         <p>
@@ -121,9 +121,9 @@ function WorkExperience() {
         </HeadingGroup>
 
         <Skills>
-          <Pill variant='neutral-outline'>Leadership</Pill>
-          <Pill variant='neutral-outline'>Training</Pill>
-          <Pill variant='neutral-outline'>Coaching</Pill>
+          <Pill variant='neutral-outline-sm'>Leadership</Pill>
+          <Pill variant='neutral-outline-sm'>Training</Pill>
+          <Pill variant='neutral-outline-sm'>Coaching</Pill>
         </Skills>
 
         <p>
@@ -142,9 +142,9 @@ function WorkExperience() {
         </HeadingGroup>
 
         <Skills>
-          <Pill variant='neutral-outline'>Data Entry</Pill>
-          <Pill variant='neutral-outline'>Soft Skills</Pill>
-          <Pill variant='neutral-outline'>Problem-Solving</Pill>
+          <Pill variant='neutral-outline-sm'>Data Entry</Pill>
+          <Pill variant='neutral-outline-sm'>Soft Skills</Pill>
+          <Pill variant='neutral-outline-sm'>Problem-Solving</Pill>
         </Skills>
 
         <p>

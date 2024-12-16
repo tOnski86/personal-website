@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import {
-  HiOutlineAcademicCap,
-  HiOutlineBars3,
-  HiOutlineChartBar,
-  HiOutlineChatBubbleBottomCenterText,
-  HiOutlinePhoto,
-  HiOutlineUser,
-  HiOutlineXMark,
+  HiAcademicCap,
+  HiBars3,
+  HiChartBar,
+  HiChatBubbleBottomCenterText,
+  HiPhoto,
+  HiUser,
+  HiXMark,
 } from 'react-icons/hi2';
 
 import Button from './Button';
@@ -123,7 +123,7 @@ function Navigation() {
           <DesktopNavLink to='contact'>Contact</DesktopNavLink>
         </ul>
 
-        <ButtonRow>
+        <ButtonRow spacing='gap-sm'>
           <Link
             to='https://github.com/tOnski86'
             target='_blank'
@@ -150,33 +150,33 @@ function Navigation() {
 
       <MobileNav>
         <MobileNavControl onClick={handleMobileNav}>
-          {mobileNavOpen ? <HiOutlineXMark /> : <HiOutlineBars3 />}
+          {mobileNavOpen ? <HiXMark /> : <HiBars3 />}
         </MobileNavControl>
 
         {mobileNavOpen && (
           <ul>
             <MobileNavLink to='about' onClick={handleMobileNav}>
-              <HiOutlineUser />
+              <HiUser />
               <span>About</span>
             </MobileNavLink>
 
             <MobileNavLink to='projects' onClick={handleMobileNav}>
-              <HiOutlinePhoto />
+              <HiPhoto />
               <span>Projects</span>
             </MobileNavLink>
 
             <MobileNavLink to='work' onClick={handleMobileNav}>
-              <HiOutlineChartBar />
+              <HiChartBar />
               <span>Work</span>
             </MobileNavLink>
 
             <MobileNavLink to='proficiencies' onClick={handleMobileNav}>
-              <HiOutlineAcademicCap />
+              <HiAcademicCap />
               <span>Proficiencies</span>
             </MobileNavLink>
 
             <MobileNavLink to='contact' onClick={handleMobileNav}>
-              <HiOutlineChatBubbleBottomCenterText />
+              <HiChatBubbleBottomCenterText />
               <span>Contact</span>
             </MobileNavLink>
           </ul>

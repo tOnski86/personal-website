@@ -1,11 +1,15 @@
 import styled from 'styled-components';
-import { HiOutlineChartBar, HiOutlinePhoto } from 'react-icons/hi2';
 import { NavLink } from 'react-router-dom';
+import { HiMapPin, HiChartBar } from 'react-icons/hi2';
+import { FaGem } from 'react-icons/fa';
+
+import { calcAge } from '../utils/helper';
 
 import Button from '../ui/Button';
 import ButtonRow from '../ui/ButtonRow';
 import Heading from '../ui/Heading';
 import HeadingGroup from '../ui/HeadingGroup';
+import Pill from '../ui/Pill';
 
 const Row = styled.div`
   display: grid;
@@ -29,6 +33,12 @@ const Column = styled.div`
   @media (min-width: 900px) {
     padding: 2rem 4rem;
   }
+`;
+
+const PersonalRow = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 `;
 
 function About() {
@@ -61,13 +71,25 @@ function About() {
 
         <NavLink to='/work'>
           <Button variant='primary-solid'>
-            <HiOutlineChartBar />
+            <HiChartBar />
             <span>Work Experience</span>
           </Button>
         </NavLink>
       </Column>
 
-      <Column></Column>
+      <Column>
+        <PersonalRow>
+          <Pill variant='neutral-outline-base'>
+            <HiMapPin />
+            <span>Philippines</span>
+          </Pill>
+
+          <Pill variant='neutral-outline-base'>
+            <FaGem />
+            <span>{calcAge()} years old</span>
+          </Pill>
+        </PersonalRow>
+      </Column>
     </Row>
   );
 }
