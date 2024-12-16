@@ -49,9 +49,13 @@ const StyledProficiencies = styled.div`
 
 const Content = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  grid-template-columns: repeat(1, minmax(10rem, 1fr));
   gap: 1rem;
   margin-bottom: 6rem;
+
+  @media (min-width: 425px) {
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  }
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(3, minmax(20rem, 1fr));
