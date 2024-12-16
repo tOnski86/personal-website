@@ -35,7 +35,7 @@ const TabContentGroup = styled.div`
 
 const TabContent = styled.div`
   display: grid;
-  grid-template-columns: repeat(1, minmax(auto, 1fr));
+  grid-template-columns: repeat(1, minmax(10rem, 1fr));
   gap: 2rem;
 
   @media (min-width: 768px) {
