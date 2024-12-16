@@ -6,7 +6,7 @@ const StyledPill = styled.span`
   padding: 0.6rem 1.2rem;
 
   ${props =>
-    props.$variant === 'neutral outline' &&
+    props.$variant === 'neutral-outline' &&
     css`
       color: var(--color-grey-1);
       border: var(--border-sm);

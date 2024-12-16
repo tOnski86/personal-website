@@ -117,8 +117,8 @@ function Navigation() {
       <DesktopNav>
         <ul>
           <DesktopNavLink to='about'>About</DesktopNavLink>
-          <DesktopNavLink to='works'>Works</DesktopNavLink>
-          <DesktopNavLink to='experience'>Experience</DesktopNavLink>
+          <DesktopNavLink to='projects'>Projects</DesktopNavLink>
+          <DesktopNavLink to='work'>Work</DesktopNavLink>
           <DesktopNavLink to='proficiencies'>Proficiencies</DesktopNavLink>
           <DesktopNavLink to='contact'>Contact</DesktopNavLink>
         </ul>
@@ -160,14 +160,14 @@ function Navigation() {
               <span>About</span>
             </MobileNavLink>
 
-            <MobileNavLink to='works' onClick={handleMobileNav}>
+            <MobileNavLink to='projects' onClick={handleMobileNav}>
               <HiOutlinePhoto />
-              <span>Works</span>
+              <span>Projects</span>
             </MobileNavLink>
 
-            <MobileNavLink to='experience' onClick={handleMobileNav}>
+            <MobileNavLink to='work' onClick={handleMobileNav}>
               <HiOutlineChartBar />
-              <span>Experience</span>
+              <span>Work</span>
             </MobileNavLink>
 
             <MobileNavLink to='proficiencies' onClick={handleMobileNav}>

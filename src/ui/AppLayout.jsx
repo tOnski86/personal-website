@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Header from './Header';
@@ -17,6 +17,7 @@ function AppLayout() {
       <Header />
       <Main>
         <Outlet />
+        <ScrollRestoration />
       </Main>
     </div>
   );

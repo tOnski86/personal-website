@@ -37,6 +37,7 @@ import {
   SiFigma,
   SiAdobeillustrator,
   SiAdobephotoshop,
+  SiOpenai,
 } from 'react-icons/si';
 
 import Heading from '../ui/Heading';
@@ -96,7 +97,7 @@ const ContentHeading = styled(Heading)`
 function Proficiencies() {
   return (
     <StyledProficiencies>
-      <SectionHeading as='h1'>Stuff</SectionHeading>
+      <SectionHeading as='h1'>Software Proficiency</SectionHeading>
 
       <Content>
         <ContentHeading as='h3'>Web Development</ContentHeading>
@@ -289,7 +290,18 @@ function Proficiencies() {
       </Content>
 
       <Content>
-        <ContentHeading as='h3'>Teams and Projects</ContentHeading>
+        <ContentHeading as='h3'>Project and Team Management</ContentHeading>
+        <StyledCard>
+          <CardHeading as='h4'>
+            <SiOpenai />
+            <span>OpenAI</span>
+          </CardHeading>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            eius.
+          </p>
+        </StyledCard>
+
         <StyledCard>
           <CardHeading as='h4'>
             <SiIntercom />

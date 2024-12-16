@@ -59,7 +59,7 @@ function About() {
           </p>
         </div>
 
-        <NavLink to='/experience'>
+        <NavLink to='/work'>
           <Button variant='primary-solid'>
             <HiOutlineChartBar />
             <span>Work Experience</span>
