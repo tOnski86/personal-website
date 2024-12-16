@@ -2,18 +2,19 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 :root {
-  --color-white: #FAFAFA;  // primary text
-  --color-black: #121212;  // primary dark
+  --color-white: #FAFAFA;  
+  --color-black: #121212;  
 
   --color-primary-dark:#2b8f9e;
   --color-primary-light:#27aabe;
   --color-secondary-dark:#ff44ff;
 
 
-  --color-grey-1: #D5D5D5; // secondary text
-  --color-grey-2: #2B2B2B; // border grey
-  --color-grey-3: #171717; // primary grey
+  --color-grey-1: #D5D5D5; 
+  --color-grey-2: #2B2B2B; 
+  --color-grey-3: #171717; 
 
+  --color-muted: #494949; 
   --color-effect-glass: rgba(18, 18, 18, 0.97);
 
   --border-sm: 0.1rem solid var(--color-grey-2);

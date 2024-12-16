@@ -38,6 +38,8 @@ import {
   SiAdobeillustrator,
   SiAdobephotoshop,
   SiOpenai,
+  SiTypescript,
+  SiNodedotjs,
 } from 'react-icons/si';
 
 import Heading from '../ui/Heading';
@@ -65,6 +67,14 @@ const Content = styled.div`
   @media (min-width: 1020px) {
     grid-template-columns: repeat(4, minmax(20rem, 1fr));
   }
+
+  &:last-child {
+    color: var(--color-muted);
+  }
+
+  &:last-child p {
+    color: var(--color-muted);
+  }
 `;
 
 const SectionHeading = styled(Heading)`
@@ -73,6 +83,10 @@ const SectionHeading = styled(Heading)`
 
 const StyledCard = styled(Card)`
   cursor: auto;
+
+  & > p {
+    color: var(--color-grey-1);
+  }
 
   &:hover {
     background-color: transparent;
@@ -521,6 +535,31 @@ function Proficiencies() {
           <CardHeading as='h4'>
             <SiMailchimp />
             <span>Mailchimp</span>
+          </CardHeading>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            eius.
+          </p>
+        </StyledCard>
+      </Content>
+
+      <Content>
+        <ContentHeading as='h3'>In Progress...</ContentHeading>
+        <StyledCard>
+          <CardHeading as='h4'>
+            <SiTypescript />
+            <span>TypeScript</span>
+          </CardHeading>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            eius.
+          </p>
+        </StyledCard>
+
+        <StyledCard>
+          <CardHeading as='h4'>
+            <SiNodedotjs />
+            <span>Node.js</span>
           </CardHeading>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,

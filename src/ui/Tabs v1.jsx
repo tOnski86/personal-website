@@ -1,17 +1,64 @@
-import Tabs from '../ui/Tabs';
-import Card from '../ui/Card';
-import Heading from '../ui/Heading';
+import styled from 'styled-components';
 
-function Portfolio() {
+import Heading from './Heading';
+import Card from './Card';
+
+const StyledTabs = styled.div`
+  max-width: 120rem;
+  margin: 0 auto;
+`;
+
+const TabTitleGroup = styled.div`
+  display: flex;
+  justify-content: center;
+  border-bottom: var(--border-sm);
+`;
+
+const TabTitle = styled.button`
+  padding: 1.2rem 3rem;
+  border: none;
+  font-weight: 500;
+  background-color: transparent;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    color: var(--color-primary-light);
+    background-color: var(--color-grey-3);
+  }
+`;
+
+const TabContentGroup = styled.div`
+  padding: 2rem;
+`;
+
+const TabContent = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, minmax(auto, 1fr));
+  gap: 2rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(24rem, 1fr));
+  }
+
+  @media (min-width: 1020px) {
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+  }
+`;
+
+function Tabs() {
   return (
-    <Tabs>
-      <Tabs.TitleGroup>
-        <Tabs.Title opens='tab-1'>Web Design</Tabs.Title>
-        <Tabs.Title opens='tab-2'>Content</Tabs.Title>
-      </Tabs.TitleGroup>
+    <StyledTabs>
+      <TabTitleGroup>
+        <TabTitle opens='tab-1'>Web Design</TabTitle>
+        <TabTitle opens='tab-2'>Content</TabTitle>
+      </TabTitleGroup>
 
-      <Tabs.ContentGroup>
-        <Tabs.Content name='tab-1'>
+      <TabContentGroup>
+        <TabContent name='tab-1'>
           <Card>
             <img src='./image-placeholder.jpg' alt='' />
             <Heading as='h3'>Project Name</Heading>
@@ -77,12 +124,10 @@ function Portfolio() {
               expedita necessitatibus?
             </p>
           </Card>
-        </Tabs.Content>
-
-        <Tabs.Content name='tab-2'></Tabs.Content>
-      </Tabs.ContentGroup>
-    </Tabs>
+        </TabContent>
+      </TabContentGroup>
+    </StyledTabs>
   );
 }
 
-export default Portfolio;
+export default Tabs;

@@ -6,11 +6,11 @@ import Heading from '../ui/Heading';
 const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(1, minmax(auto, 1fr));
+  min-height: ${`calc(100vh - 20rem)`};
   justify-content: center;
   align-items: start;
   row-gap: 4rem;
   column-gap: 4rem;
-  margin-bottom: 8rem;
 
   @media (min-width: 768px) {
     grid-template-columns: minmax(auto, 24rem) minmax(auto, 50rem);
