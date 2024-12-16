@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { HiMapPin, HiChartBar } from 'react-icons/hi2';
 import { FaFilm, FaGem, FaPizzaSlice } from 'react-icons/fa';
@@ -34,8 +34,30 @@ const Column = styled.div`
   gap: 3rem;
   padding: 2rem 0;
 
+  ${props =>
+    props.name === 'content' &&
+    css`
+      order: 2;
+    `}
+  ${props =>
+    props.name === 'interest' &&
+    css`
+      order: 1;
+    `}
+
   @media (min-width: 900px) {
     padding: 2rem 4rem;
+
+    ${props =>
+      props.name === 'content' &&
+      css`
+        order: 1;
+      `}
+    ${props =>
+      props.name === 'interest' &&
+      css`
+        order: 2;
+      `}
   }
 `;
 
@@ -49,7 +71,7 @@ const PersonalRow = styled.div`
 function About() {
   return (
     <Row>
-      <Column>
+      <Column name='content'>
         <HeadingGroup>
           <span>Antonio Saqueton</span>
           <Heading as='h1'>About Me</Heading>
@@ -82,7 +104,7 @@ function About() {
         </NavLink>
       </Column>
 
-      <Column>
+      <Column name='interest'>
         <PersonalRow>
           <Pill variant='neutral-outline-base'>
             <HiMapPin />
