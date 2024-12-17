@@ -28,8 +28,16 @@ const Form = styled.form`
 
 const InputRow = styled.div`
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(${props => props.$column}, minmax(auto, 1fr));
+
+  grid-template-columns: repeat(1, minmax(10rem, 1fr));
+
+  @media (min-width: 900px) {
+    column-gap: 2rem;
+    grid-template-columns: repeat(
+      ${props => props.$column},
+      minmax(10rem, 1fr)
+    );
+  }
 `;
 
 const InputGroup = styled.div`
