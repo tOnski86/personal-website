@@ -14,8 +14,9 @@ const sharedInputStyles = css`
     outline-offset: 0.4rem;
   }
 
-  &:focus:invalid {
+  &.error {
     outline: 0.1rem solid var(--color-secondary-dark);
+    outline-offset: 0.4rem;
   }
 `;
 
@@ -25,9 +26,14 @@ const Form = styled.form`
   }
 `;
 
+const InputRow = styled.div`
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(${props => props.$column}, minmax(auto, 1fr));
+`;
+
 const InputGroup = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 0.6rem;
 `;
 
@@ -60,53 +66,67 @@ function ContactForm() {
   const { register, handleSubmit, formState } = useForm();
   const { errors } = formState;
 
-  function onSubmit() {}
+  function onSubmit(data) {
+    console.log(data);
+  }
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
-      <InputGroup>
-        <Label htmlFor='name'>Your Name</Label>
-        <Input
-          type='text'
-          id='name'
-          {...register('name', { required: 'This field is required' })}
-        />
-        {
-          <InputError>
-            {errors?.name?.message && errors.name.message}
-          </InputError>
-        }
-      </InputGroup>
+      <InputRow $column='2'>
+        <InputGroup>
+          <Label htmlFor='name'>Your Name</Label>
+          <Input
+            type='text'
+            id='name'
+            className={errors?.name?.message && 'error'}
+            {...register('name', { required: 'This field is required' })}
+          />
+          {
+            <InputError>
+              {errors?.name?.message && errors.name.message}
+            </InputError>
+          }
+        </InputGroup>
 
-      <InputGroup>
-        <Label htmlFor='email'>Email Address</Label>
-        <Input
-          type='email'
-          id='email'
-          {...register('email', { required: 'This field is required' })}
-        />
-        {
-          <InputError>
-            {errors?.email?.message && errors.email.message}
-          </InputError>
-        }
-      </InputGroup>
+        <InputGroup>
+          <Label htmlFor='email'>Email Address</Label>
+          <Input
+            type='text'
+            id='email'
+            className={errors?.email?.message && 'error'}
+            {...register('email', {
+              required: 'This field is required',
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: 'Enter a valid email address',
+              },
+            })}
+          />
+          {
+            <InputError>
+              {errors?.email?.message && errors.email.message}
+            </InputError>
+          }
+        </InputGroup>
+      </InputRow>
 
-      <InputGroup>
-        <Label htmlFor='message'>How can I help?</Label>
-        <TextArea
-          rows={4}
-          type='text'
-          id='message'
-          {...register('message', { required: 'This field is required' })}
-        />
-        {
-          <InputError>
-            {errors?.message?.message && errors.message.message}
-          </InputError>
-        }
-      </InputGroup>
-
+      <InputRow $column='1'>
+        <InputGroup>
+          <Label htmlFor='message'>How can I help?</Label>
+          <TextArea
+            rows={4}
+            type='text'
+            id='message'
+            className={errors?.message?.message && 'error'}
+            {...register('message', { required: 'This field is required' })}
+          />
+          {
+            <InputError>
+              {errors?.message?.message && errors.message.message}
+            </InputError>
+          }
+        </InputGroup>
+      </InputRow>
       <ButtonContainer>
         <Button variant='primary-solid'>Submit</Button>
       </ButtonContainer>

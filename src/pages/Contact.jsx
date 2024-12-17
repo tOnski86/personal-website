@@ -13,7 +13,7 @@ const Row = styled.div`
   column-gap: 4rem;
 
   @media (min-width: 768px) {
-    grid-template-columns: minmax(auto, 24rem) minmax(auto, 50rem);
+    grid-template-columns: minmax(20rem, 24rem) minmax(auto, 50rem);
   }
 `;
 
