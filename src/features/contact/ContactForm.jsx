@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import styled, { css } from 'styled-components';
 
-import { addLead } from '../../services/apiLeads';
+import { insertLead } from '../../services/apiLeads';
 
 import ContactFormSuccess from './ContactFormSuccess';
 import Button from '../../ui/Button';
@@ -80,7 +80,7 @@ function ContactForm() {
   const { errors } = formState;
 
   function onSubmit(data) {
-    addLead(data);
+    insertLead(data);
     setFormSubmit(true);
     reset();
   }
@@ -126,6 +126,20 @@ function ContactForm() {
                   {errors?.email?.message && errors.email.message}
                 </InputError>
               }
+            </InputGroup>
+          </InputRow>
+
+          <InputRow $column='2'>
+            <InputGroup>
+              <Label htmlFor='company'>Company Name</Label>
+              <Input type='text' id='company' {...register('company')} />
+              {<InputError></InputError>}
+            </InputGroup>
+
+            <InputGroup>
+              <Label htmlFor='website'>Company Website</Label>
+              <Input type='text' id='website' {...register('website')} />
+              {<InputError></InputError>}
             </InputGroup>
           </InputRow>
 

@@ -5,6 +5,7 @@ import { FaFilm, FaGem } from 'react-icons/fa';
 import { TbLegoFilled } from 'react-icons/tb';
 import { SiDota2 } from 'react-icons/si';
 import { IoHeadsetSharp } from 'react-icons/io5';
+import { FaCode } from 'react-icons/fa6';
 
 import { calcAge } from '../utils/helper';
 
@@ -13,7 +14,6 @@ import ButtonRow from '../ui/ButtonRow';
 import Heading from '../ui/Heading';
 import HeadingGroup from '../ui/HeadingGroup';
 import Pill from '../ui/Pill';
-import { FaCode } from 'react-icons/fa6';
 
 const Row = styled.div`
   display: grid;

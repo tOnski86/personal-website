@@ -7,7 +7,7 @@ const Main = styled.main`
   margin: 4rem 2rem;
 
   @media (min-width: 768px) {
-    margin: 4rem 6rem;
+    margin: 6rem 6rem;
   }
 `;
 

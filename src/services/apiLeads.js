@@ -1,11 +1,14 @@
-import { collection, addDoc } from 'firebase/firestore';
-import { db } from './firebase';
+import supabase from './supabase';
 
-export async function addLead(newLead) {
-  try {
-    const docRef = await addDoc(collection(db, 'leads'), { newLead });
-    return docRef;
-  } catch (e) {
-    console.error(e);
-  }
+export async function insertLead(newLead) {
+  console.log(newLead);
+
+  const { data, error: insertError } = await supabase
+    .from('leads')
+    .insert([newLead])
+    .select();
+
+  if (insertError) throw new Error('Lead cannot be inserted');
+
+  return data;
 }

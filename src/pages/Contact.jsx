@@ -6,6 +6,7 @@ import Heading from '../ui/Heading';
 const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(1, minmax(auto, 1fr));
+  height: 100%;
   justify-content: center;
   align-items: start;
   row-gap: 4rem;
