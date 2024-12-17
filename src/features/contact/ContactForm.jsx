@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import Button from '../../ui/Button';
+import { useForm } from 'react-hook-form';
 
 const sharedInputStyles = css`
   padding: 0.8rem 1.2rem;
@@ -18,7 +19,7 @@ const sharedInputStyles = css`
   }
 `;
 
-const InputRow = styled.div`
+const Form = styled.form`
   & > * {
     margin-bottom: 1rem;
   }
@@ -27,11 +28,13 @@ const InputRow = styled.div`
 const InputGroup = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.6rem;
 `;
 
 const InputError = styled.span`
-  font-size: 1.2rem;
+  text-align: right;
+  height: 2rem;
+  font-size: 1.1rem;
   color: var(--color-secondary-dark);
 `;
 
@@ -54,32 +57,60 @@ const ButtonContainer = styled.div`
 `;
 
 function ContactForm() {
+  const { register, handleSubmit, formState } = useForm();
+  const { errors } = formState;
+
+  function onSubmit() {}
+
   return (
-    <>
-      <InputRow>
-        <InputGroup>
-          <Label htmlFor='name'>Your Name</Label>
-          <Input type='text' id='name' required />
-          <InputError>This field is required</InputError>
-        </InputGroup>
+    <Form onSubmit={handleSubmit(onSubmit)}>
+      <InputGroup>
+        <Label htmlFor='name'>Your Name</Label>
+        <Input
+          type='text'
+          id='name'
+          {...register('name', { required: 'This field is required' })}
+        />
+        {
+          <InputError>
+            {errors?.name?.message && errors.name.message}
+          </InputError>
+        }
+      </InputGroup>
 
-        <InputGroup>
-          <Label htmlFor='email'>Email Address</Label>
-          <Input type='email' id='email' required />
-          <InputError>This field is required</InputError>
-        </InputGroup>
+      <InputGroup>
+        <Label htmlFor='email'>Email Address</Label>
+        <Input
+          type='email'
+          id='email'
+          {...register('email', { required: 'This field is required' })}
+        />
+        {
+          <InputError>
+            {errors?.email?.message && errors.email.message}
+          </InputError>
+        }
+      </InputGroup>
 
-        <InputGroup>
-          <Label htmlFor='message'>How can I help?</Label>
-          <TextArea type='text' id='message' required rows={5} />
-          <InputError>This field is required</InputError>
-        </InputGroup>
+      <InputGroup>
+        <Label htmlFor='message'>How can I help?</Label>
+        <TextArea
+          rows={4}
+          type='text'
+          id='message'
+          {...register('message', { required: 'This field is required' })}
+        />
+        {
+          <InputError>
+            {errors?.message?.message && errors.message.message}
+          </InputError>
+        }
+      </InputGroup>
 
-        <ButtonContainer>
-          <Button variant='primary-solid'>Submit</Button>
-        </ButtonContainer>
-      </InputRow>
-    </>
+      <ButtonContainer>
+        <Button variant='primary-solid'>Submit</Button>
+      </ButtonContainer>
+    </Form>
   );
 }
 
