@@ -82,12 +82,13 @@ function ContactForm() {
   function onSubmit(data) {
     addLead(data);
     setFormSubmit(true);
+    reset();
   }
 
   return (
     <>
       {formSubmit ? (
-        <ContactFormSuccess />
+        <ContactFormSuccess onSuccess={setFormSubmit} />
       ) : (
         <Form onSubmit={handleSubmit(onSubmit)}>
           <InputRow $column='2'>
