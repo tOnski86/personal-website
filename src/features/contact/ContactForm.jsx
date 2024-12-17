@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 import Button from '../../ui/Button';
 import { useForm } from 'react-hook-form';
+import { addLead } from '../../services/apiLeads';
 
 const sharedInputStyles = css`
   padding: 0.8rem 1.2rem;
@@ -71,11 +72,12 @@ const ButtonContainer = styled.div`
 `;
 
 function ContactForm() {
-  const { register, handleSubmit, formState } = useForm();
+  const { register, handleSubmit, formState, reset } = useForm();
   const { errors } = formState;
 
   function onSubmit(data) {
-    console.log(data);
+    addLead(data);
+    reset();
   }
 
   return (

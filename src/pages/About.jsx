@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { HiMapPin, HiChartBar } from 'react-icons/hi2';
-import { FaFilm, FaGem, FaPizzaSlice } from 'react-icons/fa';
+import { FaFilm, FaGem } from 'react-icons/fa';
 import { TbLegoFilled } from 'react-icons/tb';
 import { SiDota2 } from 'react-icons/si';
 import { IoHeadsetSharp } from 'react-icons/io5';
@@ -45,9 +45,10 @@ const Column = styled.div`
     props.name === 'interest' &&
     css`
       order: 1;
+      align-self: flex-end;
     `}
-
-  @media (min-width: 1024px) {
+      
+      @media (min-width: 1024px) {
     padding: 2rem 4rem;
 
     ${props =>
@@ -59,6 +60,7 @@ const Column = styled.div`
       props.name === 'interest' &&
       css`
         order: 2;
+        align-self: flex-end;
       `}
   }
 `;
@@ -116,11 +118,6 @@ function About() {
           <Pill variant='neutral-outline-base'>
             <FaGem />
             <span>{calcAge()}</span>
-          </Pill>
-
-          <Pill variant='neutral-outline-base'>
-            <FaPizzaSlice />
-            <span>Pizza</span>
           </Pill>
 
           <Pill variant='neutral-outline-base'>
