@@ -20,6 +20,8 @@ const Row = styled.div`
   grid-template-columns: repeat(1, minmax(auto, 1fr));
   min-height: ${`calc(100vh - 20rem)`};
   align-items: center;
+  max-width: 120rem;
+  margin: 0 auto;
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(2, minmax(auto, 1fr));
@@ -45,7 +47,7 @@ const Column = styled.div`
       order: 1;
     `}
 
-  @media (min-width: 900px) {
+  @media (min-width: 1024px) {
     padding: 2rem 4rem;
 
     ${props =>

@@ -9,7 +9,7 @@ const Row = styled.div`
   min-height: ${`calc(100vh - 20rem)`};
   justify-content: center;
   align-items: start;
-  row-gap: 4rem;
+  row-gap: 3rem;
   column-gap: 4rem;
 
   @media (min-width: 768px) {
