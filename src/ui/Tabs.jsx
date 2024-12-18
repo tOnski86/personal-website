@@ -90,6 +90,7 @@ function ContentGroup({ children }) {
 function Content({ children, name }) {
   const { tabName } = useContext(TabsContext);
 
+  // renderprop here
   return <>{tabName === name && <TabContent>{children}</TabContent>}</>;
 }
 

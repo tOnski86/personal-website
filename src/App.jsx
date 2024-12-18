@@ -3,15 +3,17 @@ import {
   Navigate,
   RouterProvider,
 } from 'react-router-dom';
-import GlobalStyles from './styles/GlobalStyles';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
+import GlobalStyles from './styles/GlobalStyles';
 import AppLayout from './ui/AppLayout';
 import PageNotFound from './pages/PageNotFound';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
+import Projects from './pages/Projects';
 import Proficiencies from './pages/Proficiencies';
 import WorkExperience from './pages/WorkExperience';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 const router = createBrowserRouter([
   {
@@ -29,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/projects',
-        element: <Portfolio />,
+        element: <Projects />,
       },
       {
         path: '/proficiencies',
@@ -43,12 +45,21 @@ const router = createBrowserRouter([
   },
 ]);
 
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 0,
+    },
+  },
+});
+
 function App() {
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryDevtools initialIsOpen={false} />
       <GlobalStyles />
       <RouterProvider router={router} />
-    </>
+    </QueryClientProvider>
   );
 }
 
