@@ -25,7 +25,7 @@ const StyledCard = styled.div`
 `;
 
 function ProjectCard({ project }) {
-  const { title, description, image, tags } = project;
+  const { title, description, image } = project;
 
   return (
     <StyledCard>
@@ -34,7 +34,6 @@ function ProjectCard({ project }) {
         <Heading as='h3'>{title}</Heading>
       </HeadingGroup>
       <p>{description}</p>
-      <span>{tags}</span>
     </StyledCard>
   );
 }

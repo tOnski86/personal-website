@@ -87,10 +87,10 @@ function ContentGroup({ children }) {
   return <TabContentGroup>{children}</TabContentGroup>;
 }
 
-function Content({ data, render, name }) {
+function Content({ children, name }) {
   const { tabName } = useContext(TabsContext);
 
-  return <>{tabName === name && <TabContent>{data.map(render)}</TabContent>}</>;
+  return <>{tabName === name && <TabContent>{children}</TabContent>}</>;
 }
 
 Tabs.TitleGroup = TitleGroup;

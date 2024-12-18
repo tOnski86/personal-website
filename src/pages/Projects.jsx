@@ -51,14 +51,34 @@ function Projects() {
     <Tabs>
       <Tabs.TitleGroup>
         <Tabs.Title opens='tab-1'>All</Tabs.Title>
+        <Tabs.Title opens='tab-2'>Web Design</Tabs.Title>
+        <Tabs.Title opens='tab-3'>Content</Tabs.Title>
       </Tabs.TitleGroup>
 
       <Tabs.ContentGroup>
-        <Tabs.Content
-          name='tab-1'
-          data={projects}
-          render={project => <ProjectCard project={project} key={project.id} />}
-        />
+        <Tabs.Content name='tab-1'>
+          {projects.map(project => (
+            <ProjectCard project={project} key={project.id} />
+          ))}
+        </Tabs.Content>
+
+        <Tabs.Content name='tab-2'>
+          {projects.map(
+            project =>
+              project.category === 'web-design' && (
+                <ProjectCard project={project} key={project.id} />
+              )
+          )}
+        </Tabs.Content>
+
+        <Tabs.Content name='tab-3'>
+          {projects.map(
+            project =>
+              project.category === 'content' && (
+                <ProjectCard project={project} key={project.id} />
+              )
+          )}
+        </Tabs.Content>
       </Tabs.ContentGroup>
     </Tabs>
   );
