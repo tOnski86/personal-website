@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import Heading from '../../ui/Heading';
 import HeadingGroup from '../../ui/HeadingGroup';
+import { Link } from 'react-router-dom';
 
 const StyledCard = styled.div`
   display: flex;
@@ -25,16 +26,18 @@ const StyledCard = styled.div`
 `;
 
 function ProjectCard({ project }) {
-  const { title, description, image } = project;
+  const { title, description, image, link } = project;
 
   return (
-    <StyledCard>
-      <img src={image} alt='' />
-      <HeadingGroup>
-        <Heading as='h3'>{title}</Heading>
-      </HeadingGroup>
-      <p>{description}</p>
-    </StyledCard>
+    <Link to={link} target='_blank' rel='noopener noreferrer'>
+      <StyledCard>
+        <img src={image} alt='' />
+        <HeadingGroup>
+          <Heading as='h3'>{title}</Heading>
+        </HeadingGroup>
+        <p>{description}</p>
+      </StyledCard>
+    </Link>
   );
 }
 
