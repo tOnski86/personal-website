@@ -51,7 +51,7 @@ function Projects() {
     <Tabs>
       <Tabs.TitleGroup>
         <Tabs.Title opens='tab-1'>All</Tabs.Title>
-        <Tabs.Title opens='tab-2'>Web Design</Tabs.Title>
+        <Tabs.Title opens='tab-2'>Web</Tabs.Title>
         <Tabs.Title opens='tab-3'>Content</Tabs.Title>
       </Tabs.TitleGroup>
 
