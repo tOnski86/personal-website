@@ -5,6 +5,7 @@ import { useReadProjects } from '../features/projects/useReadProjects';
 import Tabs from '../ui/Tabs';
 import Card from '../ui/Card';
 import Heading from '../ui/Heading';
+import Spinner from '../ui/Spinner';
 
 const HeadingGroup = styled.div`
   display: flex;
@@ -29,8 +30,22 @@ const Tag = styled.span`
   border: var(--border-sm);
 `;
 
+const Loading = styled.div`
+  height: ${`calc(100vh - 20rem)`};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 function Projects() {
   const { isReadingProjects, readProjects } = useReadProjects();
+
+  if (isReadingProjects)
+    return (
+      <Loading>
+        <Spinner />
+      </Loading>
+    );
 
   return (
     <Tabs>
