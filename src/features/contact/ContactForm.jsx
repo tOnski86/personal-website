@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import styled, { css } from 'styled-components';
-
-import { insertLead } from '../../services/apiLeads';
+import { useSubmitForm } from './useSubmitForm';
 
 import ContactFormSuccess from './ContactFormSuccess';
 import Button from '../../ui/Button';
+import Spinner from '../../ui/Spinner';
 
 const sharedInputStyles = css`
   padding: 0.8rem 1.2rem;
@@ -24,15 +24,8 @@ const sharedInputStyles = css`
   }
 `;
 
-const Form = styled.form`
-  & > * {
-    margin-bottom: 1rem;
-  }
-`;
-
 const InputRow = styled.div`
   display: grid;
-
   grid-template-columns: repeat(1, minmax(10rem, 1fr));
 
   @media (min-width: 900px) {
@@ -46,7 +39,7 @@ const InputRow = styled.div`
 
 const InputGroup = styled.div`
   display: grid;
-  gap: 0.6rem;
+  gap: 0.8rem;
 `;
 
 const InputError = styled.span`
@@ -72,12 +65,28 @@ const Label = styled.label`
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: end;
+  margin-top: 0.6rem;
+`;
+
+const Loading = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 function ContactForm() {
   const [formSubmit, setFormSubmit] = useState(false);
   const { register, handleSubmit, formState, reset } = useForm();
   const { errors } = formState;
+
+  const { isInsertingLead, insertLead } = useSubmitForm();
+
+  if (isInsertingLead)
+    return (
+      <Loading>
+        <Spinner />
+      </Loading>
+    );
 
   function onSubmit(data) {
     insertLead(data);
@@ -90,7 +99,7 @@ function ContactForm() {
       {formSubmit ? (
         <ContactFormSuccess onSuccess={setFormSubmit} />
       ) : (
-        <Form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <InputRow $column='2'>
             <InputGroup>
               <Label htmlFor='name'>Your Name</Label>
@@ -163,7 +172,7 @@ function ContactForm() {
           <ButtonContainer>
             <Button variant='primary-solid'>Submit</Button>
           </ButtonContainer>
-        </Form>
+        </form>
       )}
     </>
   );
