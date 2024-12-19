@@ -46,15 +46,10 @@ const DesktopNavLink = styled(NavLink)`
 `;
 
 const MobileNav = styled.nav`
-  display: block;
+  background-color: var(--color-effect-glass);
 
   @media (min-width: 900px) {
     display: none;
-  }
-
-  & ul {
-    display: flex;
-    flex-direction: column;
   }
 `;
 
@@ -106,6 +101,8 @@ const MobileNavControl = styled.button`
 `;
 
 const MobileNavList = styled.ul`
+  display: flex;
+  flex-direction: column;
   padding-top: 1rem;
 `;
 

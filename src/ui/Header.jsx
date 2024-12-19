@@ -3,6 +3,7 @@ import Logo from './Logo';
 import Navigation from './Navigation';
 
 const StyledHeader = styled.header`
+  min-height: 6.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
