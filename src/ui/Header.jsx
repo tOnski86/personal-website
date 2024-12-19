@@ -11,7 +11,6 @@ const StyledHeader = styled.header`
   background-color: var(--color-effect-glass);
   position: sticky;
   top: 0;
-  backdrop-filter: blur(0.4rem);
 
   & > :nth-child(2) {
     flex: 1;
