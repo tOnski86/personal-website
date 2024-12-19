@@ -122,8 +122,8 @@ function Proficiencies() {
             <span>HTML</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Creating well-structured, accessible content using semantic markup
+            to ensure SEO-compliant websites.
           </p>
         </StyledCard>
 
@@ -133,8 +133,8 @@ function Proficiencies() {
             <span>CSS</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Implementing user-friendly, brand-compliant websites that are
+            responsive and cross-browser compatible.
           </p>
         </StyledCard>
 
@@ -144,8 +144,8 @@ function Proficiencies() {
             <span>Sass</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Writing maintainable styles using variables, mixins, and BEM class
+            names for improved readability and scalability.
           </p>
         </StyledCard>
 
@@ -155,8 +155,8 @@ function Proficiencies() {
             <span>Tailwind CSS</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Building responsive, utility styles with Tailwind’s pre-defined
+            classes for rapid development and consistent layouts.
           </p>
         </StyledCard>
 
@@ -166,8 +166,8 @@ function Proficiencies() {
             <span>CSS Modules</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Scoping component styles to avoid styling conflicts, ensuring
+            maintainable and reusable React applications.
           </p>
         </StyledCard>
 
@@ -177,8 +177,8 @@ function Proficiencies() {
             <span>Styled Components</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Writing component-level styles in JavaScript enabling dynamic styles
+            within React applications.
           </p>
         </StyledCard>
 
@@ -188,8 +188,8 @@ function Proficiencies() {
             <span>JavaScript</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Building interactive web features using pure JavaScript, without
+            external libraries or frameworks.
           </p>
         </StyledCard>
 
@@ -199,8 +199,8 @@ function Proficiencies() {
             <span>React</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Developing dynamic, component-based application that keeps state and
+            the user interface in sync.
           </p>
         </StyledCard>
 
@@ -210,8 +210,8 @@ function Proficiencies() {
             <span>React Router</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Implementing client-side routing in React applications with
+            efficient single-page app behavior.
           </p>
         </StyledCard>
 
@@ -221,8 +221,8 @@ function Proficiencies() {
             <span>React Query</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Managing remote state and caching, facilitating communication
+            between applications and external APIs.
           </p>
         </StyledCard>
 
@@ -232,8 +232,8 @@ function Proficiencies() {
             <span>Redux</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Centralizing global state management, enabling predictable state
+            flow across components via the store.
           </p>
         </StyledCard>
 
@@ -243,8 +243,8 @@ function Proficiencies() {
             <span>React Hook Form</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Simplifing form handling by efficiently registering inputs and
+            implementing custom form validations.
           </p>
         </StyledCard>
 
@@ -254,8 +254,8 @@ function Proficiencies() {
             <span>Supabase</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Integrating real-time databases, authentication, and APIs to build
+            full-stack applications with ease.
           </p>
         </StyledCard>
 
@@ -265,8 +265,8 @@ function Proficiencies() {
             <span>Vite</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Optimizing development workflows for fast bundling, and efficient
+            hot module reloading during development.
           </p>
         </StyledCard>
 
@@ -276,8 +276,8 @@ function Proficiencies() {
             <span>Create React App</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Setting up React projects quickly with Create React App to focus on
+            rapid development.
           </p>
         </StyledCard>
 
@@ -287,8 +287,8 @@ function Proficiencies() {
             <span>Vercel</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Deploying frontend projects using serverless hosting with continuous
+            deployment.
           </p>
         </StyledCard>
 
@@ -298,8 +298,8 @@ function Proficiencies() {
             <span>GitHub</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Managing code repositories, collaborating, and version controlling
+            for efficient project development.
           </p>
         </StyledCard>
 
@@ -309,8 +309,8 @@ function Proficiencies() {
             <span>Obsidian</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Organizing and managing technical notes using markdown for efficient
+            information links.
           </p>
         </StyledCard>
       </Content>
@@ -323,8 +323,8 @@ function Proficiencies() {
             <span>OpenAI</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Leveraging AI-powered tools for automating tasks to streamline
+            project workflows and decision-making.
           </p>
         </StyledCard>
 
@@ -334,8 +334,8 @@ function Proficiencies() {
             <span>Intercom</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Utilized Intercom internally for tracking and resolving team issues,
+            and creating company knowledge base.
           </p>
         </StyledCard>
 
@@ -345,8 +345,8 @@ function Proficiencies() {
             <span>Looker Studio</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Creating interactive reports and dashboards, providing insights for
+            data-driven decision-making.
           </p>
         </StyledCard>
 
@@ -356,8 +356,8 @@ function Proficiencies() {
             <span>Lucidchart</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Designing flowcharts and diagrams to facilitate clear project
+            requirements when working with teams.
           </p>
         </StyledCard>
 
@@ -367,8 +367,8 @@ function Proficiencies() {
             <span>Draw.io</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Creating detailed diagrams, process flows, and wireframes to plan
+            website design and data flow.
           </p>
         </StyledCard>
 
@@ -378,8 +378,8 @@ function Proficiencies() {
             <span>Jira</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Utilized Jira for tracking project progress and managing tasks
+            through sprints and issues.
           </p>
         </StyledCard>
 
@@ -389,8 +389,8 @@ function Proficiencies() {
             <span>Asana</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Leveraged Asana to organize tasks, track project timelines, and
+            coordinate team efforts.
           </p>
         </StyledCard>
 
@@ -400,8 +400,8 @@ function Proficiencies() {
             <span>ClickUp</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Streamline tasks, and track team progress for efficient project
+            execution.
           </p>
         </StyledCard>
 
@@ -411,8 +411,8 @@ function Proficiencies() {
             <span>Confluence</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Creating project documentation to ensure knowledge sharing across
+            departments.
           </p>
         </StyledCard>
 
@@ -422,8 +422,8 @@ function Proficiencies() {
             <span>Notion</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Creating collaborative content workspaces for efficient knowledge
+            sharing.
           </p>
         </StyledCard>
 
@@ -433,8 +433,8 @@ function Proficiencies() {
             <span>Google Suite</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Managed users through the Admin Console, while utilizing
+            productivity and collaboration tools in Google Suite.
           </p>
         </StyledCard>
       </Content>
@@ -447,8 +447,8 @@ function Proficiencies() {
             <span>Adobe Photoshop</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Creating high-quality graphics assets that are visual appealing and
+            brand consistent.
           </p>
         </StyledCard>
 
@@ -458,8 +458,8 @@ function Proficiencies() {
             <span>Adobe Illustrator</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Designing vector-based graphics, logos, and illustrations, ensuring
+            scalability and brand alignment.
           </p>
         </StyledCard>
 
@@ -469,8 +469,8 @@ function Proficiencies() {
             <span>Figma</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Creating UI/UX design wireframes and prototypes for web applications
+            to ensure functionality and ease of use.
           </p>
         </StyledCard>
       </Content>
@@ -483,8 +483,8 @@ function Proficiencies() {
             <span>Business Manager</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Managed ad campaigns to target key audiences and driving measurable
+            business results.
           </p>
         </StyledCard>
 
@@ -494,8 +494,8 @@ function Proficiencies() {
             <span>Google Ads</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Created and optimized ads to target keywords to drive traffic and
+            increase visibility in search results.
           </p>
         </StyledCard>
 
@@ -505,8 +505,8 @@ function Proficiencies() {
             <span>Google Analytics</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Tracking website performance, analyze user behavior, and generate
+            insights to guide data-driven strategies.
           </p>
         </StyledCard>
 
@@ -516,8 +516,8 @@ function Proficiencies() {
             <span>Google Tag Manager</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Implemented custom event tracking to enhance website analytics for
+            better decision-making.
           </p>
         </StyledCard>
 
@@ -527,8 +527,8 @@ function Proficiencies() {
             <span>Google Search Console</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Analyzing search traffic, indexing status, and resolving technical
+            issues to improve site visibility in search results.
           </p>
         </StyledCard>
 
@@ -538,8 +538,8 @@ function Proficiencies() {
             <span>Hootsuite</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Consolidated multiple social media accounts to streamline content
+            and engagement across channels.
           </p>
         </StyledCard>
 
@@ -549,8 +549,8 @@ function Proficiencies() {
             <span>Mailchimp</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Executed email marketing campaigns to managing subscribers, and
+            automated outreach campaigns.
           </p>
         </StyledCard>
       </Content>
@@ -563,8 +563,8 @@ function Proficiencies() {
             <span>TypeScript</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Enhancing my JavaScript skills to implement strong typing and
+            improving code reliability when developing web applications.
           </p>
         </StyledCard>
 
@@ -574,8 +574,8 @@ function Proficiencies() {
             <span>Node.js</span>
           </CardHeading>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            eius.
+            Learning to build scalable backend applications and handle
+            asynchronous operations in full-stack projects.
           </p>
         </StyledCard>
       </Content>

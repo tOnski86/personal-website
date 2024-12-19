@@ -79,7 +79,7 @@ function WorkExperience() {
           execution, and cross-functional success.
         </p>
 
-        <StyledHeading as='h3'>Process Definition</StyledHeading>
+        <StyledHeading as='h3'>Project Management</StyledHeading>
         <p>
           Managed cross-departmental projects with clear scopes, timelines,
           deliverables, and success metrics to streamline processes, including
@@ -273,7 +273,7 @@ function WorkExperience() {
           Tech Leads.
         </p>
 
-        <StyledHeading as='h3'>Inbound Phone Support</StyledHeading>
+        <StyledHeading as='h3'>Phone Support</StyledHeading>
         <p>
           Provided real-time resolution and assistance to customers facing
           technical issues with Dell products, handling inbound calls and
