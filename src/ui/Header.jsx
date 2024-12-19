@@ -3,11 +3,10 @@ import Logo from './Logo';
 import Navigation from './Navigation';
 
 const StyledHeader = styled.header`
-  min-height: 6.5rem;
+  height: 6.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem 2rem;
   border-bottom: var(--border-sm);
   background-color: var(--color-effect-glass);
   position: sticky;

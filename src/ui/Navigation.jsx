@@ -57,7 +57,7 @@ const MobileNavLink = styled(NavLink)`
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   list-style: none;
   font-weight: 500;
   cursor: pointer;
@@ -103,7 +103,6 @@ const MobileNavControl = styled.button`
 const MobileNavList = styled.ul`
   display: flex;
   flex-direction: column;
-  padding-top: 1rem;
 `;
 
 function Navigation() {

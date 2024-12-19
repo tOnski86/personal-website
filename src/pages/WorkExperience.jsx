@@ -74,17 +74,17 @@ function WorkExperience() {
           employees and 100+ internal team members.
         </p>
         <p>
-          As a strategic thinker, delegator, and hands-on implementer, I
-          contributed to the company's leadership initiatives, technical
-          execution, and cross-functional success.
+          As a strategist, manager, and implementer, I contributed to the
+          company's leadership initiatives, technical execution, and
+          cross-functional success.
         </p>
 
         <StyledHeading as='h3'>Project Management</StyledHeading>
         <p>
-          Managed cross-departmental projects with clear scopes, timelines,
-          deliverables, and success metrics to streamline processes, including
-          creating a talent acquisition pipeline, employee attendance and
-          time-off protocols, and performance review systems.
+          Managed departmental projects with defined scopes, timelines,
+          deliverables, and success metrics to streamline processes, such as the
+          creation of the company's talent acquisition pipeline, employee code
+          of conduct, attendance and time-off protocols, and performance review.
         </p>
         <p>
           Translated strategic plans into actionable workflows, configuring
@@ -94,9 +94,9 @@ function WorkExperience() {
 
         <StyledHeading as='h3'>Business Development</StyledHeading>
         <p>
-          Designed impactful sales pitch decks, service offering materials, and
-          the company’s finance model documentation, directly supporting growth
-          initiatives and contributing to securing funding for expansion.
+          Designed impactful company pitch decks, service offering materials,
+          and the company’s finance model documentation, directly supporting
+          growth initiatives and contributing to securing funding for expansion.
         </p>
 
         <StyledHeading as='h3'>Website Creation</StyledHeading>
@@ -109,8 +109,8 @@ function WorkExperience() {
 
         <StyledHeading as='h3'>Talent Acquisition</StyledHeading>
         <p>
-          Built and implemented a recruitment pipeline that processed over 100
-          daily job applications, and incorporating KPI dashboards to track team
+          Built and implemented a recruitment pipeline that processed 120+ daily
+          job applications, and incorporating KPI dashboards to track team
           success metrics, including reduced time-to-hire and increased
           applicant quality.
         </p>
@@ -138,8 +138,8 @@ function WorkExperience() {
 
         <p>
           Supported the client by managing their digital presence and enhancing
-          online visibility through comprehensive virtual assistance, including
-          social media management, email marketing, and web design.
+          online visibility, including social media management, email marketing,
+          and web design.
         </p>
 
         <StyledHeading as='h3'>Social Media Management</StyledHeading>
@@ -161,11 +161,10 @@ function WorkExperience() {
           were up-to-date and aligned with their business objectives.
         </p>
 
-        <StyledHeading as='h3'>Client-Specific Tasks</StyledHeading>
+        <StyledHeading as='h3'>Ad Hoc</StyledHeading>
         <p>
-          Provided comprehensive virtual assistance across various ad-hoc tasks
-          as mandated by clients, ensuring seamless support for their evolving
-          needs.
+          Provided virtual assistance across various tasks as mandated by the
+          client, ensuring seamless support for their needs.
         </p>
       </Company>
 

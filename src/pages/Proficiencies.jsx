@@ -107,6 +107,7 @@ const CardHeading = styled(Heading)`
 
 const ContentHeading = styled(Heading)`
   grid-column: 1 / -1;
+  color: var(--color-primary-light);
 `;
 
 function Proficiencies() {
