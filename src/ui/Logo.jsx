@@ -6,12 +6,20 @@ const StyledLogo = styled.div`
   font-size: 3rem;
   font-weight: 600;
   color: var(--color-primary-dark);
+
+  & > img {
+    height: 100%;
+    width: 9rem;
+    color: currentColor;
+  }
 `;
 
 function Logo() {
   return (
     <NavLink to='/'>
-      <StyledLogo>tOnski</StyledLogo>
+      <StyledLogo>
+        <img src='/tonski-logo.svg' alt='Antonio Saqueton Website Logo' />
+      </StyledLogo>
     </NavLink>
   );
 }

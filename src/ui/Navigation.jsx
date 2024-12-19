@@ -105,6 +105,10 @@ const MobileNavControl = styled.button`
   }
 `;
 
+const MobileNavList = styled.ul`
+  padding-top: 1rem;
+`;
+
 function Navigation() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
@@ -154,7 +158,7 @@ function Navigation() {
         </MobileNavControl>
 
         {mobileNavOpen && (
-          <ul>
+          <MobileNavList>
             <MobileNavLink to='about' onClick={handleMobileNav}>
               <HiUser />
               <span>About</span>
@@ -179,7 +183,7 @@ function Navigation() {
               <HiChatBubbleBottomCenterText />
               <span>Contact</span>
             </MobileNavLink>
-          </ul>
+          </MobileNavList>
         )}
       </MobileNav>
     </>

@@ -27,13 +27,12 @@ function Contact() {
       <GridHeading as='h1'>Let's Chat.</GridHeading>
       <div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-          officiis expedita aperiam dignissimos impedit deleniti dolorum
-          repellat.
+          Whether you’re looking to collaborate on a web development project, or
+          discuss growth strategies, I’d love to hear from you.
         </p>
         <p>
-          Quidem laborum, soluta consectetur placeat obcaecati qui quis quisquam
-          illo cupiditate nostrum? Sequi.
+          I’m always open to conversations about how we can turn ideas into
+          actionable solutions. Feel free to reach out, and let’s connect!
         </p>
       </div>
       <ContactForm />

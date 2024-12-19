@@ -84,8 +84,8 @@ function About() {
         <div>
           <p>
             I am a seasoned professional in the Business Process Outsourcing and
-            Remote Services Industry pursuing my passion for building web
-            applications.
+            Remote Services Industry pursuing my passion for building
+            user-centric web applications.
           </p>
           <p>
             One of the biggest challenges that companies face when developing
