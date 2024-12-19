@@ -2,7 +2,9 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledLogo = styled.div`
-  padding: 1rem 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
   display: flex;
   font-size: 3rem;
   font-weight: 600;
