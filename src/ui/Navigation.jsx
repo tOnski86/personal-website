@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
@@ -107,6 +107,18 @@ const MobileNavList = styled.ul`
 
 function Navigation() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const ref = useRef();
+
+  useEffect(() => {
+    function mobileNavClick(e) {
+      if (ref.current && !ref.current.contains(e.target)) {
+        setMobileNavOpen(false);
+      }
+    }
+    document.addEventListener('click', mobileNavClick, true);
+
+    return () => document.removeEventListener('click', mobileNavClick, true);
+  }, []);
 
   function handleMobileNav() {
     setMobileNavOpen(mobileNavOpen => !mobileNavOpen);
@@ -154,7 +166,7 @@ function Navigation() {
         </MobileNavControl>
 
         {mobileNavOpen && (
-          <MobileNavList>
+          <MobileNavList ref={ref}>
             <MobileNavLink to='about' onClick={handleMobileNav}>
               <HiUser />
               <span>About</span>
