@@ -1,15 +1,10 @@
-import { Outlet, ScrollRestoration } from 'react-router-dom';
+import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Header from './Header';
+import BackgroundLayout from './BackgroundLayout';
 
-const StyledAppLayout = styled.div`
-  background-image: url('bg-grunge.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-`;
+const StyledAppLayout = styled.div``;
 
 const Main = styled.main`
   padding: 4rem 2rem;
@@ -20,14 +15,20 @@ const Main = styled.main`
 `;
 
 function AppLayout() {
+  const location = useLocation();
+  const Container =
+    location.pathname === '/about' || location.pathname === '/contact'
+      ? BackgroundLayout
+      : StyledAppLayout;
+
   return (
-    <StyledAppLayout>
+    <Container>
       <Header />
       <Main>
         <Outlet />
         <ScrollRestoration />
       </Main>
-    </StyledAppLayout>
+    </Container>
   );
 }
 
