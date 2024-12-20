@@ -68,14 +68,6 @@ const Content = styled.div`
   @media (min-width: 1020px) {
     grid-template-columns: repeat(4, minmax(20rem, 1fr));
   }
-
-  &:last-child {
-    color: var(--color-muted);
-  }
-
-  &:last-child p {
-    color: var(--color-muted);
-  }
 `;
 
 const SectionHeading = styled(Heading)`

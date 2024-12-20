@@ -3,23 +3,31 @@ import styled from 'styled-components';
 
 import Header from './Header';
 
+const StyledAppLayout = styled.div`
+  background-image: url('bg-grunge.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+`;
+
 const Main = styled.main`
-  margin: 4rem 2rem;
+  padding: 4rem 2rem;
 
   @media (min-width: 768px) {
-    margin: 6rem 6rem;
+    padding: 6rem 6rem;
   }
 `;
 
 function AppLayout() {
   return (
-    <div>
+    <StyledAppLayout>
       <Header />
       <Main>
         <Outlet />
         <ScrollRestoration />
       </Main>
-    </div>
+    </StyledAppLayout>
   );
 }
 
