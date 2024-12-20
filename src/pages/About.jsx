@@ -73,7 +73,6 @@ const PersonalRow = styled.div`
 `;
 
 function About() {
-  console.log(import.meta.env.APP_TEST_VAR);
   return (
     <Row>
       <Column name='content'>
