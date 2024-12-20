@@ -4,7 +4,14 @@ import styled from 'styled-components';
 import Header from './Header';
 import BackgroundLayout from './BackgroundLayout';
 
-const StyledAppLayout = styled.div``;
+const StyledAppLayout = styled.div`
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-black),
+    var(--color-grey-3)
+  );
+`;
 
 const Main = styled.main`
   padding: 4rem 2rem;
