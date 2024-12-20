@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { HiMapPin, HiChartBar } from 'react-icons/hi2';
-import { FaFilm, FaGem } from 'react-icons/fa';
+import { FaCoffee, FaFilm, FaGem, FaPaintBrush } from 'react-icons/fa';
 import { TbLegoFilled } from 'react-icons/tb';
 import { SiDota2 } from 'react-icons/si';
 import { IoHeadsetSharp } from 'react-icons/io5';
-import { FaCode } from 'react-icons/fa6';
+import { FaCode, FaGuitar } from 'react-icons/fa6';
 
 import { calcAge } from '../utils/helper';
 
@@ -24,7 +24,7 @@ const Row = styled.div`
   margin: 0 auto;
 
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-template-columns: repeat(2, auto);
     gap: 4rem;
   }
 `;
@@ -45,11 +45,11 @@ const Column = styled.div`
     props.name === 'interest' &&
     css`
       order: 1;
-      align-self: flex-end;
+      align-self: center;
     `}
       
       @media (min-width: 1024px) {
-    padding: 2rem 4rem;
+    padding: 0 4rem;
 
     ${props =>
       props.name === 'content' &&
@@ -60,7 +60,7 @@ const Column = styled.div`
       props.name === 'interest' &&
       css`
         order: 2;
-        align-self: flex-end;
+        align-self: center;
       `}
   }
 `;
@@ -70,6 +70,11 @@ const PersonalRow = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  margin-top: -24rem;
+`;
+
+const Image = styled.img`
+  width: 100%;
 `;
 
 function About() {
@@ -109,40 +114,56 @@ function About() {
       </Column>
 
       <Column name='interest'>
+        <Image src='antonio-saqueton.png' />
         <PersonalRow>
-          <Pill variant='neutral-outline-base'>
+          <Pill variant='neutral-solid-base'>
             <HiMapPin />
             <span>Philippines</span>
           </Pill>
 
-          <Pill variant='neutral-outline-base'>
+          <Pill variant='neutral-solid-base'>
             <FaGem />
             <span>{calcAge()}</span>
           </Pill>
 
-          <Pill variant='neutral-outline-base'>
+          <Pill variant='neutral-solid-base'>
             <IoHeadsetSharp />
             <span>Coheed & Cambria</span>
           </Pill>
 
-          <Pill variant='neutral-outline-base'>
+          <Pill variant='neutral-solid-base'>
             <TbLegoFilled />
             <span>Lego</span>
           </Pill>
 
-          <Pill variant='neutral-outline-base'>
+          <Pill variant='neutral-solid-base'>
             <FaCode />
             <span>Coding</span>
           </Pill>
 
-          <Pill variant='neutral-outline-base'>
+          <Pill variant='neutral-solid-base'>
             <SiDota2 />
             <span>Dota 2</span>
           </Pill>
 
-          <Pill variant='neutral-outline-base'>
+          <Pill variant='neutral-solid-base'>
             <FaFilm />
             <span>The Sopranos</span>
+          </Pill>
+
+          <Pill variant='neutral-solid-base'>
+            <FaGuitar />
+            <span>Guitars</span>
+          </Pill>
+
+          <Pill variant='neutral-solid-base'>
+            <FaCoffee />
+            <span>Coffee</span>
+          </Pill>
+
+          <Pill variant='neutral-solid-base'>
+            <FaPaintBrush />
+            <span>Drawing</span>
           </Pill>
         </PersonalRow>
       </Column>

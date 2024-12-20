@@ -23,6 +23,14 @@ const StyledPill = styled.span`
       border: var(--border-sm);
     `}
 
+    ${props =>
+    props.$variant === 'neutral-solid-base' &&
+    css`
+      font-size: 1.4rem;
+      color: var(--color-white);
+      background-color: var(--color-grey-3);
+    `}
+
     & svg {
     width: 1.6rem;
     height: 1.6rem;
