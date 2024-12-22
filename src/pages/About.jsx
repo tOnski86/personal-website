@@ -126,7 +126,10 @@ function About() {
         </Column>
 
         <Column name='interest'>
-          <Image src='antonio-saqueton.png' />
+          <Image
+            src='antonio-saqueton.png'
+            alt='Photo of Antonio Saqueton with stylized grunge and newsprint effect'
+          />
           <PersonalRow>
             <Pill variant='neutral-solid-base'>
               <HiMapPin />

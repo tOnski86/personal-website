@@ -26,12 +26,12 @@ const StyledCard = styled.div`
 `;
 
 function ProjectCard({ project }) {
-  const { title, description, image, link } = project;
+  const { title, description, image, imageAlt, link } = project;
 
   return (
     <Link to={link} target='_blank' rel='noopener noreferrer'>
       <StyledCard>
-        <img src={image} alt='' />
+        <img src={image} alt={imageAlt} />
         <HeadingGroup>
           <Heading as='h3'>{title}</Heading>
         </HeadingGroup>
