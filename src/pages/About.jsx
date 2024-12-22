@@ -83,7 +83,7 @@ function About() {
     <>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>tOnski | Frontend Web Developer & Remote Professional</title>
+        <title>tOnski | Project Management & Web Development</title>
         <meta
           name='description'
           content='Explore the journey behind building impactful web applications, from leadership in remote services to expertise in modern frontend development.'
