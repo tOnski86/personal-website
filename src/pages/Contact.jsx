@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 
 import ContactForm from '../features/contact/ContactForm';
@@ -23,20 +24,32 @@ const GridHeading = styled(Heading)`
 
 function Contact() {
   return (
-    <Row>
-      <GridHeading as='h1'>Let's Chat.</GridHeading>
-      <div>
-        <p>
-          Whether you’re looking to collaborate on a web development project, or
-          discuss growth strategies, I’d love to hear from you.
-        </p>
-        <p>
-          I’m always open to conversations about how we can turn ideas into
-          actionable solutions. Feel free to reach out, and let’s connect!
-        </p>
-      </div>
-      <ContactForm />
-    </Row>
+    <>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>tOnski | Let's Chat!</title>
+        <meta
+          name='description'
+          content='Get in touch to discuss web development projects, or your own strategy. Bring your ideas to life with modern solutions.'
+        />
+        <link rel='canonical' href='https://tonski.vercel.app/contact' />
+      </Helmet>
+
+      <Row>
+        <GridHeading as='h1'>Let's Chat.</GridHeading>
+        <div>
+          <p>
+            Whether you’re looking to collaborate on a web development project,
+            or discuss growth strategies, I’d love to hear from you.
+          </p>
+          <p>
+            I’m always open to conversations about how we can turn ideas into
+            actionable solutions. Feel free to reach out, and let’s connect!
+          </p>
+        </div>
+        <ContactForm />
+      </Row>
+    </>
   );
 }
 

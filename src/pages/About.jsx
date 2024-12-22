@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { HiMapPin, HiChartBar } from 'react-icons/hi2';
@@ -79,95 +80,107 @@ const Image = styled.img`
 
 function About() {
   return (
-    <Row>
-      <Column name='content'>
-        <HeadingGroup>
-          <span>Antonio Saqueton</span>
-          <Heading as='h1'>About Me</Heading>
-        </HeadingGroup>
+    <>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>tOnski | Frontend Web Developer & Remote Professional</title>
+        <meta
+          name='description'
+          content='Explore the journey behind building impactful web applications, from leadership in remote services to expertise in modern frontend development.'
+        />
+        <link rel='canonical' href='https://tonski.vercel.app/about' />
+      </Helmet>
 
-        <div>
-          <p>
-            I am a seasoned professional in the Business Process Outsourcing and
-            Remote Services Industry pursuing my passion for building
-            user-centric web applications.
-          </p>
-          <p>
-            One of the biggest challenges that companies face when developing
-            their own software is the effective translation of business
-            requirements into executable technical solutions.
-          </p>
+      <Row>
+        <Column name='content'>
+          <HeadingGroup>
+            <span>Antonio Saqueton</span>
+            <Heading as='h1'>About Me</Heading>
+          </HeadingGroup>
 
-          <p>
-            My ability to collaborate with both technical experts and
-            stakeholders ensures that every project achieves clarity, alignment,
-            and measurable success.
-          </p>
-        </div>
+          <div>
+            <p>
+              I am a seasoned professional in the Business Process Outsourcing
+              and Remote Services Industry pursuing my passion for building
+              user-centric web applications.
+            </p>
+            <p>
+              One of the biggest challenges that companies face when developing
+              their own software is the effective translation of business
+              requirements into executable technical solutions.
+            </p>
 
-        <NavLink to='/work'>
-          <Button variant='primary-solid'>
-            <HiChartBar />
-            <span>Work Experience</span>
-          </Button>
-        </NavLink>
-      </Column>
+            <p>
+              My ability to collaborate with both technical experts and
+              stakeholders ensures that every project achieves clarity,
+              alignment, and measurable success.
+            </p>
+          </div>
 
-      <Column name='interest'>
-        <Image src='antonio-saqueton.png' />
-        <PersonalRow>
-          <Pill variant='neutral-solid-base'>
-            <HiMapPin />
-            <span>Philippines</span>
-          </Pill>
+          <NavLink to='/work'>
+            <Button variant='primary-solid'>
+              <HiChartBar />
+              <span>Work Experience</span>
+            </Button>
+          </NavLink>
+        </Column>
 
-          <Pill variant='neutral-solid-base'>
-            <FaGem />
-            <span>{calcAge()}</span>
-          </Pill>
+        <Column name='interest'>
+          <Image src='antonio-saqueton.png' />
+          <PersonalRow>
+            <Pill variant='neutral-solid-base'>
+              <HiMapPin />
+              <span>Philippines</span>
+            </Pill>
 
-          <Pill variant='neutral-solid-base'>
-            <IoHeadsetSharp />
-            <span>Coheed & Cambria</span>
-          </Pill>
+            <Pill variant='neutral-solid-base'>
+              <FaGem />
+              <span>{calcAge()}</span>
+            </Pill>
 
-          <Pill variant='neutral-solid-base'>
-            <TbLegoFilled />
-            <span>Lego</span>
-          </Pill>
+            <Pill variant='neutral-solid-base'>
+              <IoHeadsetSharp />
+              <span>Coheed & Cambria</span>
+            </Pill>
 
-          <Pill variant='neutral-solid-base'>
-            <FaCode />
-            <span>Coding</span>
-          </Pill>
+            <Pill variant='neutral-solid-base'>
+              <TbLegoFilled />
+              <span>Lego</span>
+            </Pill>
 
-          <Pill variant='neutral-solid-base'>
-            <SiDota2 />
-            <span>Dota 2</span>
-          </Pill>
+            <Pill variant='neutral-solid-base'>
+              <FaCode />
+              <span>Coding</span>
+            </Pill>
 
-          <Pill variant='neutral-solid-base'>
-            <FaFilm />
-            <span>The Sopranos</span>
-          </Pill>
+            <Pill variant='neutral-solid-base'>
+              <SiDota2 />
+              <span>Dota 2</span>
+            </Pill>
 
-          <Pill variant='neutral-solid-base'>
-            <FaGuitar />
-            <span>Guitars</span>
-          </Pill>
+            <Pill variant='neutral-solid-base'>
+              <FaFilm />
+              <span>The Sopranos</span>
+            </Pill>
 
-          <Pill variant='neutral-solid-base'>
-            <FaCoffee />
-            <span>Coffee</span>
-          </Pill>
+            <Pill variant='neutral-solid-base'>
+              <FaGuitar />
+              <span>Guitars</span>
+            </Pill>
 
-          <Pill variant='neutral-solid-base'>
-            <FaPaintBrush />
-            <span>Drawing</span>
-          </Pill>
-        </PersonalRow>
-      </Column>
-    </Row>
+            <Pill variant='neutral-solid-base'>
+              <FaCoffee />
+              <span>Coffee</span>
+            </Pill>
+
+            <Pill variant='neutral-solid-base'>
+              <FaPaintBrush />
+              <span>Drawing</span>
+            </Pill>
+          </PersonalRow>
+        </Column>
+      </Row>
+    </>
   );
 }
 

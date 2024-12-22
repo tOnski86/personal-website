@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { SiHtml5, SiJavascript, SiTailwindcss } from 'react-icons/si';
 import { useReadProjects } from '../features/projects/useReadProjects';
@@ -48,39 +49,51 @@ function Projects() {
     );
 
   return (
-    <Tabs>
-      <Tabs.TitleGroup>
-        <Tabs.Title opens='tab-1'>All</Tabs.Title>
-        <Tabs.Title opens='tab-2'>Web</Tabs.Title>
-        <Tabs.Title opens='tab-3'>Content</Tabs.Title>
-      </Tabs.TitleGroup>
+    <>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>tOnski | Projects</title>
+        <meta
+          name='description'
+          content='Browse real-world web development projects highlighting scalable design, responsive interfaces, and API integrations using modern technologies.'
+        />
+        <link rel='canonical' href='https://tonski.vercel.app/projects' />
+      </Helmet>
 
-      <Tabs.ContentGroup>
-        <Tabs.Content name='tab-1'>
-          {projects.map(project => (
-            <ProjectCard project={project} key={project.id} />
-          ))}
-        </Tabs.Content>
+      <Tabs>
+        <Tabs.TitleGroup>
+          <Tabs.Title opens='tab-1'>All</Tabs.Title>
+          <Tabs.Title opens='tab-2'>Web</Tabs.Title>
+          <Tabs.Title opens='tab-3'>Content</Tabs.Title>
+        </Tabs.TitleGroup>
 
-        <Tabs.Content name='tab-2'>
-          {projects.map(
-            project =>
-              project.category === 'web-design' && (
-                <ProjectCard project={project} key={project.id} />
-              )
-          )}
-        </Tabs.Content>
+        <Tabs.ContentGroup>
+          <Tabs.Content name='tab-1'>
+            {projects.map(project => (
+              <ProjectCard project={project} key={project.id} />
+            ))}
+          </Tabs.Content>
 
-        <Tabs.Content name='tab-3'>
-          {projects.map(
-            project =>
-              project.category === 'content' && (
-                <ProjectCard project={project} key={project.id} />
-              )
-          )}
-        </Tabs.Content>
-      </Tabs.ContentGroup>
-    </Tabs>
+          <Tabs.Content name='tab-2'>
+            {projects.map(
+              project =>
+                project.category === 'web-design' && (
+                  <ProjectCard project={project} key={project.id} />
+                )
+            )}
+          </Tabs.Content>
+
+          <Tabs.Content name='tab-3'>
+            {projects.map(
+              project =>
+                project.category === 'content' && (
+                  <ProjectCard project={project} key={project.id} />
+                )
+            )}
+          </Tabs.Content>
+        </Tabs.ContentGroup>
+      </Tabs>
+    </>
   );
 }
 
