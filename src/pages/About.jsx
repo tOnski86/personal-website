@@ -86,7 +86,7 @@ function About() {
         <title>tOnski | Project Management & Web Development</title>
         <meta
           name='description'
-          content='Explore the journey behind building impactful web applications, from leadership in remote services to expertise in modern frontend development.'
+          content='Explore Antonio Saqueton&#39;s journey behind building impactful web applications, from leadership in remote services to expertise in modern frontend development.'
         />
         <link rel='canonical' href='https://tonski.vercel.app/about' />
       </Helmet>
