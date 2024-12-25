@@ -77,6 +77,7 @@ function Title({ children, opens }) {
     <TabTitle
       onClick={() => setTabName(opens)}
       className={tabName === opens ? 'active' : ''}
+      role='tab'
     >
       {children}
     </TabTitle>

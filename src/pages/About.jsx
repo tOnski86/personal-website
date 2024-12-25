@@ -118,7 +118,7 @@ function About() {
           </div>
 
           <NavLink to='/work'>
-            <Button variant='primary-solid'>
+            <Button variant='primary-solid' role='button'>
               <HiChartBar />
               <span>Work Experience</span>
             </Button>

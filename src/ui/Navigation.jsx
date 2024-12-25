@@ -141,7 +141,7 @@ function Navigation() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <Button variant='primary-outline'>
+            <Button variant='primary-outline' role='button'>
               <FaGithub />
               <span>GitHub</span>
             </Button>
@@ -152,7 +152,7 @@ function Navigation() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <Button variant='primary-solid'>
+            <Button variant='primary-solid' role='button'>
               <FaLinkedin />
               <span>LinkedIn</span>
             </Button>

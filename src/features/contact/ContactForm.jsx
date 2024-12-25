@@ -170,7 +170,9 @@ function ContactForm() {
             </InputGroup>
           </InputRow>
           <ButtonContainer>
-            <Button variant='primary-solid'>Submit</Button>
+            <Button variant='primary-solid' role='button'>
+              Submit
+            </Button>
           </ButtonContainer>
         </form>
       )}

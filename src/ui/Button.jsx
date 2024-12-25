@@ -42,9 +42,9 @@ const StyledButton = styled.button`
   transition: all 0.3s;
 `;
 
-function Button({ children, variant, onClick }) {
+function Button({ children, variant, onClick, role }) {
   return (
-    <StyledButton $variant={variant} onClick={onClick}>
+    <StyledButton $variant={variant} onClick={onClick} role={role}>
       {children}
     </StyledButton>
   );
