@@ -161,7 +161,7 @@ function Navigation() {
       </DesktopNav>
 
       <MobileNav>
-        <MobileNavControl onClick={handleMobileNav}>
+        <MobileNavControl onClick={handleMobileNav} role='menu'>
           {mobileNavOpen ? <HiXMark /> : <HiBars3 />}
         </MobileNavControl>
 
