@@ -120,7 +120,7 @@ function Proficiencies() {
         <SectionHeading as='h1'>Software Proficiency</SectionHeading>
 
         <Content>
-          <ContentHeading as='h3'>Project and Team Management</ContentHeading>
+          <ContentHeading as='h3'>Project Management</ContentHeading>
           <StyledCard>
             <CardHeading as='h4'>
               <SiOpenai />
@@ -182,8 +182,8 @@ function Proficiencies() {
               <span>Jira</span>
             </CardHeading>
             <p>
-              Utilized Jira for tracking project progress and managing tasks
-              through sprints and issues.
+              Utilized Jira for managing Agile projects using Kanban backlog or
+              Scrum sprints.
             </p>
           </StyledCard>
 
@@ -204,8 +204,8 @@ function Proficiencies() {
               <span>ClickUp</span>
             </CardHeading>
             <p>
-              Streamline tasks, and track team progress for efficient project
-              execution.
+              Streamline waterfall or Agile projects, track team progress for
+              efficient project execution.
             </p>
           </StyledCard>
 
