@@ -123,6 +123,61 @@ function Proficiencies() {
           <ContentHeading as='h3'>Project Management</ContentHeading>
           <StyledCard>
             <CardHeading as='h4'>
+              <SiJira />
+              <span>Jira</span>
+            </CardHeading>
+            <p>
+              Utilized Jira for managing Agile projects using Kanban for steady
+              work or Scrum sprints for iterative and incremental work.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiAsana />
+              <span>Asana</span>
+            </CardHeading>
+            <p>
+              Leveraged Asana to organize tasks, track project timelines, and
+              coordinate team efforts.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiClickup />
+              <span>ClickUp</span>
+            </CardHeading>
+            <p>
+              Streamline waterfall or Agile projects, track team progress for
+              efficient project execution.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiConfluence />
+              <span>Confluence</span>
+            </CardHeading>
+            <p>
+              Ensuring alignment of projects with business requirements across
+              team members and stakeholders.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiNotion />
+              <span>Notion</span>
+            </CardHeading>
+            <p>
+              Creating collaborative content workspaces for efficient knowledge
+              sharing.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
               <SiOpenai />
               <span>OpenAI</span>
             </CardHeading>
@@ -173,61 +228,6 @@ function Proficiencies() {
             <p>
               Creating detailed diagrams, process flows, and wireframes to plan
               website design and data flow.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiJira />
-              <span>Jira</span>
-            </CardHeading>
-            <p>
-              Utilized Jira for managing Agile projects using Kanban backlog or
-              Scrum sprints.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiAsana />
-              <span>Asana</span>
-            </CardHeading>
-            <p>
-              Leveraged Asana to organize tasks, track project timelines, and
-              coordinate team efforts.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiClickup />
-              <span>ClickUp</span>
-            </CardHeading>
-            <p>
-              Streamline waterfall or Agile projects, track team progress for
-              efficient project execution.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiConfluence />
-              <span>Confluence</span>
-            </CardHeading>
-            <p>
-              Creating project documentation to ensure knowledge sharing across
-              departments.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiNotion />
-              <span>Notion</span>
-            </CardHeading>
-            <p>
-              Creating collaborative content workspaces for efficient knowledge
-              sharing.
             </p>
           </StyledCard>
 
