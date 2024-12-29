@@ -100,16 +100,15 @@ function About() {
 
           <div>
             <p>
-              I am a seasoned professional in the Business Process Outsourcing
-              and Remote Services Industry, pursuing my passion for building
-              user-centric web applications and managing impactful projects.
-            </p>
-            <p>
               One of the biggest challenges that companies face when developing
               software is the effective translation of business requirements
-              into executable technical solutions. As a Project Manager, I
-              specialize in breaking down complex goals into clear, actionable
-              plans, ensuring every phase aligns with organizational objectives.
+              into executable technical solutions.
+            </p>
+
+            <p>
+              As a Project Manager, I specialize in breaking down complex goals
+              into clear, actionable plans, ensuring every project aligns with
+              organizational objectives.
             </p>
 
             <p>
