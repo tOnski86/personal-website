@@ -101,19 +101,22 @@ function About() {
           <div>
             <p>
               I am a seasoned professional in the Business Process Outsourcing
-              and Remote Services Industry pursuing my passion for building
-              user-centric web applications.
+              and Remote Services Industry, pursuing my passion for building
+              user-centric web applications and managing impactful projects.
             </p>
             <p>
               One of the biggest challenges that companies face when developing
-              their own software is the effective translation of business
-              requirements into executable technical solutions.
+              software is the effective translation of business requirements
+              into executable technical solutions. As a Project Manager, I
+              specialize in breaking down complex goals into clear, actionable
+              plans, ensuring every phase aligns with organizational objectives.
             </p>
 
             <p>
               My ability to collaborate with both technical experts and
               stakeholders ensures that every project achieves clarity,
-              alignment, and measurable success.
+              alignment, and measurable success, whether through Agile
+              methodologies or predictive development approaches.
             </p>
           </div>
 

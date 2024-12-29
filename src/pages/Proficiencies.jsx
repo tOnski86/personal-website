@@ -120,6 +120,130 @@ function Proficiencies() {
         <SectionHeading as='h1'>Software Proficiency</SectionHeading>
 
         <Content>
+          <ContentHeading as='h3'>Project and Team Management</ContentHeading>
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiOpenai />
+              <span>OpenAI</span>
+            </CardHeading>
+            <p>
+              Leveraging AI-powered tools for automating tasks to streamline
+              project workflows and decision-making.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiIntercom />
+              <span>Intercom</span>
+            </CardHeading>
+            <p>
+              Utilized Intercom internally for tracking and resolving team
+              issues, and creating company knowledge base.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiLooker />
+              <span>Looker Studio</span>
+            </CardHeading>
+            <p>
+              Creating interactive reports and dashboards, providing insights
+              for data-driven decision-making.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiLucid />
+              <span>Lucidchart</span>
+            </CardHeading>
+            <p>
+              Designing flowcharts and diagrams to facilitate clear project
+              requirements when working with teams.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiDiagramsdotnet />
+              <span>Draw.io</span>
+            </CardHeading>
+            <p>
+              Creating detailed diagrams, process flows, and wireframes to plan
+              website design and data flow.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiJira />
+              <span>Jira</span>
+            </CardHeading>
+            <p>
+              Utilized Jira for tracking project progress and managing tasks
+              through sprints and issues.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiAsana />
+              <span>Asana</span>
+            </CardHeading>
+            <p>
+              Leveraged Asana to organize tasks, track project timelines, and
+              coordinate team efforts.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiClickup />
+              <span>ClickUp</span>
+            </CardHeading>
+            <p>
+              Streamline tasks, and track team progress for efficient project
+              execution.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiConfluence />
+              <span>Confluence</span>
+            </CardHeading>
+            <p>
+              Creating project documentation to ensure knowledge sharing across
+              departments.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiNotion />
+              <span>Notion</span>
+            </CardHeading>
+            <p>
+              Creating collaborative content workspaces for efficient knowledge
+              sharing.
+            </p>
+          </StyledCard>
+
+          <StyledCard>
+            <CardHeading as='h4'>
+              <SiGoogledrive />
+              <span>Google Suite</span>
+            </CardHeading>
+            <p>
+              Managed users through the Admin Console, while utilizing
+              productivity and collaboration tools in Google Suite.
+            </p>
+          </StyledCard>
+        </Content>
+
+        <Content>
           <ContentHeading as='h3'>Web Development</ContentHeading>
           <StyledCard>
             <CardHeading as='h4'>
@@ -321,130 +445,6 @@ function Proficiencies() {
         </Content>
 
         <Content>
-          <ContentHeading as='h3'>Project and Team Management</ContentHeading>
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiOpenai />
-              <span>OpenAI</span>
-            </CardHeading>
-            <p>
-              Leveraging AI-powered tools for automating tasks to streamline
-              project workflows and decision-making.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiIntercom />
-              <span>Intercom</span>
-            </CardHeading>
-            <p>
-              Utilized Intercom internally for tracking and resolving team
-              issues, and creating company knowledge base.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiLooker />
-              <span>Looker Studio</span>
-            </CardHeading>
-            <p>
-              Creating interactive reports and dashboards, providing insights
-              for data-driven decision-making.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiLucid />
-              <span>Lucidchart</span>
-            </CardHeading>
-            <p>
-              Designing flowcharts and diagrams to facilitate clear project
-              requirements when working with teams.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiDiagramsdotnet />
-              <span>Draw.io</span>
-            </CardHeading>
-            <p>
-              Creating detailed diagrams, process flows, and wireframes to plan
-              website design and data flow.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiJira />
-              <span>Jira</span>
-            </CardHeading>
-            <p>
-              Utilized Jira for tracking project progress and managing tasks
-              through sprints and issues.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiAsana />
-              <span>Asana</span>
-            </CardHeading>
-            <p>
-              Leveraged Asana to organize tasks, track project timelines, and
-              coordinate team efforts.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiClickup />
-              <span>ClickUp</span>
-            </CardHeading>
-            <p>
-              Streamline tasks, and track team progress for efficient project
-              execution.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiConfluence />
-              <span>Confluence</span>
-            </CardHeading>
-            <p>
-              Creating project documentation to ensure knowledge sharing across
-              departments.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiNotion />
-              <span>Notion</span>
-            </CardHeading>
-            <p>
-              Creating collaborative content workspaces for efficient knowledge
-              sharing.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiGoogledrive />
-              <span>Google Suite</span>
-            </CardHeading>
-            <p>
-              Managed users through the Admin Console, while utilizing
-              productivity and collaboration tools in Google Suite.
-            </p>
-          </StyledCard>
-        </Content>
-
-        <Content>
           <ContentHeading as='h3'>Graphic Design</ContentHeading>
           <StyledCard>
             <CardHeading as='h4'>
@@ -556,31 +556,6 @@ function Proficiencies() {
             <p>
               Executed email marketing campaigns to managing subscribers, and
               automated outreach campaigns.
-            </p>
-          </StyledCard>
-        </Content>
-
-        <Content>
-          <ContentHeading as='h3'>In Progress...</ContentHeading>
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiTypescript />
-              <span>TypeScript</span>
-            </CardHeading>
-            <p>
-              Enhancing my JavaScript skills to implement strong typing and
-              improving code reliability when developing web applications.
-            </p>
-          </StyledCard>
-
-          <StyledCard>
-            <CardHeading as='h4'>
-              <SiNodedotjs />
-              <span>Node.js</span>
-            </CardHeading>
-            <p>
-              Learning to build scalable backend applications and handle
-              asynchronous operations in full-stack projects.
             </p>
           </StyledCard>
         </Content>

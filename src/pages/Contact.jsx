@@ -40,11 +40,13 @@ function Contact() {
         <div>
           <p>
             Whether you’re looking to collaborate on a web development project,
-            or discuss growth strategies, I’d love to hear from you.
+            discuss growth strategies, or explore project management solutions,
+            I’d love to hear from you.
           </p>
           <p>
-            I’m always open to conversations about how we can turn ideas into
-            actionable solutions. Feel free to reach out, and let’s connect!
+            I’m always open to conversations about turning ideas into
+            actionable, measurable outcomes. Feel free to reach out, and let’s
+            connect to drive your next project forward!
           </p>
         </div>
         <ContactForm />
