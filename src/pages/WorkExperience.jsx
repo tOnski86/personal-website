@@ -86,22 +86,34 @@ function WorkExperience() {
           </p>
           <p>
             As a strategist, manager, and implementer, I contributed to the
-            company's leadership initiatives, technical execution, and
-            cross-functional success.
+            company’s strategic initiatives, technical execution, and
+            cross-functional success by aligning development cycles — whether
+            predictive or Agile — to project requirements.
+          </p>
+          <p>
+            My approach ensures that each project benefits from the appropriate
+            methodology to balance key knowledge areas and process groups
+            effectively.
           </p>
 
           <StyledHeading as='h3'>Project Management</StyledHeading>
           <p>
-            Managed departmental projects with defined scopes, timelines,
-            deliverables, and success metrics to streamline processes, such as
-            the creation of the company's talent acquisition pipeline, employee
-            code of conduct, attendance and time-off protocols, and performance
-            review.
+            I specialize in engaging with stakeholders, breaking down high-level
+            business needs into a clear project charter and management plan to
+            translate objectives to actionable work packages, and monitoring
+            deliverables against predefined success metrics, driving projects to
+            successful completion while ensuring alignment with the team.
           </p>
           <p>
-            Translated strategic plans into actionable workflows, configuring
-            tools and processes to align with organizational goals, enabling
-            seamless team adoption and execution.
+            Whether managing sprint cycles or adhering to traditional project
+            phases, my focus is on delivering user-centric solutions that are
+            strategically aligned with organizational goals.
+          </p>
+          <p>
+            This approach has led to the development of key projects - including
+            the company’s talent acquisition pipeline, employee code of conduct,
+            attendance and time-off protocols, performance review systems, and
+            comprehensive digital strategies.
           </p>
 
           <StyledHeading as='h3'>Business Development</StyledHeading>
